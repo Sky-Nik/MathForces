@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 78,
+  "name": "Произведение цешек",
+  "source_type": "training",
+  "source_id": 11,
+  "tags": ["combinatorics", "binomial coefficients"],
+  "difficulty": "??"
+}

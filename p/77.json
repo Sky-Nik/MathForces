@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 77,
+  "name": "Сумма цешек",
+  "source_type": "training",
+  "source_id": 11,
+  "tags": ["combinatorics", "binomial coefficients"],
+  "difficulty": "??"
+}

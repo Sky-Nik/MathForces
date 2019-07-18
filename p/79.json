@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 79,
+  "name": "Взвешенные суммы цешек",
+  "source_type": "training",
+  "source_id": 11,
+  "tags": ["combinatorics", "binomial coefficients"],
+  "difficulty": "??"
+}

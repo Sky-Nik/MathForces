@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 80,
+  "name": "Цешка &mdash; многочлен",
+  "source_type": "training",
+  "source_id": 11,
+  "tags": ["combinatorics", "binomial coefficients"],
+  "difficulty": "??"
+}
