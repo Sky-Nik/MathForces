@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 25,
+  "name": "Петя, Вася, и дорогая игра",
+  "source_type": "training",
+  "source_id": 2,
+  "tags": ["combinatorics", "board", "games"],
+  "difficulty": "??"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 24,
+  "name": "Черно-белые треугольники",
+  "source_type": "training",
+  "source_id": 2,
+  "tags": ["combinatorics", "board"],
+  "difficulty": "??"
+}

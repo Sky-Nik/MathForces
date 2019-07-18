@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 19,
+  "name": "Гепард гепарду друг",
+  "source_type": "training",
+  "source_id": 2,
+  "tags": ["combinatorics", "board"],
+  "difficulty": "??"
+}
