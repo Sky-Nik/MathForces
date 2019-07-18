@@ -1,0 +1,16 @@
+{
+  "type": "training",
+  "id": 10,
+  "source": "Кружки в Хамовниках",
+  "name": "Деревья",
+  "grade": 7,
+  "p_ids": [68, 69, 70, 71, 72, 73, 74, 75, 76],
+  "_source": "khamovniki",
+  "_cat": "c",
+  "_grade": 7,
+  "_diff": "m",
+  "_link": "11-trees",
+  "_topic": "Деревья",
+  "_date": "24.11.2018",
+  "_num_probs": 9
+}

@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 70,
+  "name": "Удали вершину",
+  "source_type": "training",
+  "source_id": 10,
+  "tags": ["combinatorics", "graphs", "trees"],
+  "difficulty": "??"
+}

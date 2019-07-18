@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 74,
+  "name": "Экономим на циклах",
+  "source_type": "training",
+  "source_id": 10,
+  "tags": ["combinatorics", "graphs", "trees", "cycles"],
+  "difficulty": "??"
+}

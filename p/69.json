@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 69,
+  "name": "Остов остову рознь",
+  "source_type": "training",
+  "source_id": 10,
+  "tags": ["combinatorics", "graphs", "trees"],
+  "difficulty": "??"
+}

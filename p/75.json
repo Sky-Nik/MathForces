@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 75,
+  "name": "Открой 50, закрой одну",
+  "source_type": "training",
+  "source_id": 10,
+  "tags": ["combinatorics", "graphs", "trees"],
+  "difficulty": "??"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 72,
+  "name": "Вассалы, сюзерены, и бароны",
+  "source_type": "training",
+  "source_id": 10,
+  "tags": ["combinatorics", "graphs", "trees"],
+  "difficulty": "??"
+}

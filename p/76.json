@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 76,
+  "name": "Прокати кубик",
+  "source_type": "training",
+  "source_id": 10,
+  "tags": ["combinatorics", "graphs", "trees"],
+  "difficulty": "??"
+}
