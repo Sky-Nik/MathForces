@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 5,
+    "name": "Разноцветные шарики",
+    "source_type": "contest",
+    "source_id": 1,
+    "tags": ["combinatorics", "binary"],
+    "difficulty": 1000
+}

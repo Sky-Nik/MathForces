@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 15,
+    "name": "Хорошие клетки в 11&times;11",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings"],
+    "difficulty": 1400
+}

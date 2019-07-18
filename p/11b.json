@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": "11b",
+    "name": "Куб 5&times;5&times;5 без противоположных уголков",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings"],
+    "difficulty": 1400
+}

@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 14,
+    "name": "&laquo;Ну Барсик, ну ещё капельку&raquo;",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings"],
+    "difficulty": 1500
+}

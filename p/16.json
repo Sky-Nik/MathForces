@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 16,
+    "name": "Сотовая игра",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings", "games"],
+    "difficulty": 1700
+}

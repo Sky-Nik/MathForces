@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 13,
+    "name": "Доску 8&times;8 таки разрезали",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings"],
+    "difficulty": 1200
+}

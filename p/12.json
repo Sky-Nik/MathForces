@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 12,
+    "name": "Перекрась квадрат!",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings"],
+    "difficulty": 1300
+}

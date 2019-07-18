@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": "11a",
+    "name": "Куб 3&times;3&times;3 без трех уголков",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings"],
+    "difficulty": 1200
+}

@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 9,
+    "name": "10&times;10 на Т-тетраминошки",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings"],
+    "difficulty": 1200
+}

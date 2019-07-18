@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 1,
+    "name": "Игра с делителями",
+    "source_type": "contest",
+    "source_id": 1,
+    "tags": ["number theory", "combinatorics", "games"],
+    "difficulty": 1000
+}

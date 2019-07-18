@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 6,
+    "name": "Две фишки на полосе",
+    "source_type": "contest",
+    "source_id": 1,
+    "tags": ["combinatorics", "chessboard", "graphs", "bigraphs"],
+    "difficulty": 1400
+}

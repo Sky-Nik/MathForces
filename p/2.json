@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 2,
+    "name": "Сфинкс и три числа",
+    "source_type": "contest",
+    "source_id": 1,
+    "tags": ["questions", "combinatorics", "games"],
+    "difficulty": 1200
+}

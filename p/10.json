@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 10,
+    "name": "8&times;8 и странные доминошки",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings"],
+    "difficulty": 1100
+}

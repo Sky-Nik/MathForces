@@ -1,0 +1,133 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.credits {
+  color: black;
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  padding: 16px;
+  font-size: 16px;
+  display: inline;
+}
+
+table {
+  border-collapse: collapse;
+  align-self: center;
+}
+
+#finder_table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+}
+
+td {
+  max-width: 350px;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.problem {
+
+  margin-left: 10%;
+  width: 80%;
+  margin-right: 10%;
+  /*margin-bottom: 50px;*/
+}
+
+.problem_tags {
+  font-size: smaller;
+  color: gray;
+}
+
+.problem_body {
+  padding: 15px;
+  background-color: #f2f2f2;
+  font-size: 1em;
+}
+
+.problem_head {
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 150%;
+}
+
+div.submit_problem button.submit_problem_button {
+  margin-left: auto;
+  margin-right: 0;
+  display: block; 
+}
+
+button.submit_problem_button {
+  background-color: white; 
+  border-radius: 18px;
+  border-color: #4CAF50;
+  border-width: 3px;
+  padding: 9px;
+}
+
+.submit_problem_button_inline_odd {
+  background: white url("img/submit-22x22.png") no-repeat right top;
+  border-radius: 0px;
+  /*border-color: #4CAF50;*/
+  border-width: 0px;
+  padding: 11px;
+}
+
+.submit_problem_button_inline_even {
+  background: #f2f2f2 url("img/submit-22x22.png") no-repeat right top;
+  border-radius: 0px;
+  /*border-color: #4CAF50;*/
+  border-width: 0px;
+  padding: 11px;
+}

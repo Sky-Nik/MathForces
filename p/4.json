@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 4,
+    "name": "О делимости сумм чисел на круге",
+    "source_type": "contest",
+    "source_id": 1,
+    "tags": ["number theory", "divisibility"],
+    "difficulty": 1000
+}

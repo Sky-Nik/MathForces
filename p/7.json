@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 7,
+    "name": "Аня и ряд из чисел",
+    "source_type": "contest",
+    "source_id": 1,
+    "tags": ["number theory", "Stern–Brocot tree", "Euler phi function"],
+    "difficulty": 1700
+}

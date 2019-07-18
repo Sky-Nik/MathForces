@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": "8a",
+    "name": "8&times;8 на 1&times;3",
+    "source_type": "training",
+    "source_id": 1,
+    "tags": ["combinatorics", "colorings"],
+    "difficulty": 1000
+}

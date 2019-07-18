@@ -1,0 +1,9 @@
+{
+    "type": "problem",
+    "id": 3,
+    "name": "Любопытные дроби",
+    "source_type": "contest",
+    "source_id": 1,
+    "tags": ["number theory"],
+    "difficulty": 1000
+}
