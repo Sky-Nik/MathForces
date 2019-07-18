@@ -1,7 +1,7 @@
 {
   "type": "problem",
   "id": 52,
-  "name": "3<sup>x</sup> + 4<sup>y</sup> = 5<sup>z</sup>",
+  "name": "3<sup>x</sup> &plus; 4<sup>y</sup> = 5<sup>z</sup>",
   "source_type": "training",
   "source_id": 6,
   "tags": ["number theory"],

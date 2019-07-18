@@ -1,7 +1,7 @@
 {
   "type": "problem",
   "id": 44,
-  "name": "p<sup>q</sup> + q<sup>p</sup>",
+  "name": "p<sup>q</sup> &plus; q<sup>p</sup>",
   "source_type": "training",
   "source_id": 6,
   "tags": ["number theory", "divisibility"],

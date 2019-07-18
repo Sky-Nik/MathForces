@@ -1,7 +1,7 @@
 {
   "type": "problem",
   "id": 51,
-  "name": "1<sup>n</sup> + 2<sup>n</sup> + &hellip; + n<sup>n</sup>",
+  "name": "1<sup>n</sup> &plus; 2<sup>n</sup> + &hellip; &plus; n<sup>n</sup>",
   "source_type": "training",
   "source_id": 6,
   "tags": ["number theory"],

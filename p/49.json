@@ -1,7 +1,7 @@
 {
   "type": "problem",
   "id": 49,
-  "name": "x<sup>3</sup> + 3xy(x + y) + 2y<sup>3</sup>",
+  "name": "x<sup>3</sup> &plus; 3xy(x + y) &plus; 2y<sup>3</sup>",
   "source_type": "training",
   "source_id": 6,
   "tags": ["number theory", "algebra"],
