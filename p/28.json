@@ -1,7 +1,7 @@
 {
   "type": "problem",
   "id": 28,
-  "name": "Кавелерия дивизия №777",
+  "name": "Кавелерийская дивизия №777",
   "source_type": "training",
   "source_id": 3,
   "tags": ["combinatorics", "graphs"],
