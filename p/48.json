@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 48,
+  "name": "a<sup>2</sup> + 9ab + b<sup>2</sup>",
+  "source_type": "training",
+  "source_id": 6,
+  "tags": ["number theory", "algebra"],
+  "difficulty": "??"
+}

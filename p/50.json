@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 50,
+  "name": "x<sup>2</sup> + y<sup>2</sup> - 5xy + 4",
+  "source_type": "training",
+  "source_id": 6,
+  "tags": ["number theory"],
+  "difficulty": "??"
+}

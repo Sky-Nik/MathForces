@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 53,
+  "name": "x<sup>8</sup> + 2<sup>2<sup>x</sup>+2</sup> = p",
+  "source_type": "training",
+  "source_id": 6,
+  "tags": ["number theory"],
+  "difficulty": "??"
+}
