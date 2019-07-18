@@ -243,14 +243,14 @@ def ps2t_tex(p_ids, t_id):
     open(f'{t_id}.tex', 'w', encoding='utf-8').write(t_tex)
 
 
-def generate_p_archive():
+def generate_p_index():
     import os
     os.chdir('p')
-    archive_html = '''
+    index_html = '''
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Problems Archive</title>
+    <title>Problems</title>
     <meta charset="utf-8">
     <base target="_blank">
     <link rel="stylesheet" type="text/css" href="../sty.css">
@@ -270,7 +270,7 @@ def generate_p_archive():
     for p_id in map(lambda _: _[:-5], filter(lambda _: _[-5:] == '.json', os.listdir())):
         p_json2html(p_id)
         p = json.loads(open(f'{p_id}.json', 'r', encoding='utf-8').read())
-        archive_html += f'''
+        index_html += f'''
             <tr>
                 <td><a href="{p['id']}.html">{p['id']}</a></td>
                 <td><a href="{p['id']}.html">{p['name']}</a></td>
@@ -278,23 +278,23 @@ def generate_p_archive():
                 <td>{p['difficulty']}</td>
             </tr>'''
 
-    archive_html += '''    
+    index_html += '''    
         </tbody>
     </table>
 </body>
 </html>'''
 
-    open(f'archive.html', 'w', encoding='utf-8').write(archive_html)
+    open(f'index.html', 'w', encoding='utf-8').write(index_html)
     os.chdir('..')
 
 
-def generate_c_archive():
+def generate_c_index():
     import os
     os.chdir('c')
-    archive_html = '''<!DOCTYPE html>
+    index_html = '''<!DOCTYPE html>
 <html>
 <head>
-    <title>Contests Archive</title>
+    <title>Contests</title>
     <meta charset="utf-8">
     <base target="_blank">
     <link rel="stylesheet" type="text/css" href="../sty.css">
@@ -315,7 +315,7 @@ def generate_c_archive():
         c_json2html(c_id)
         c_json2html_t(c_id)
         c = json.loads(open(f'{c_id}.json', 'r', encoding='utf-8').read())
-        archive_html += f'''
+        index_html += f'''
             <tr>
                 <td><a href="{c['id']}_t.html">{c['id']}</a></td>
                 <td><a href="{c['id']}_t.html">{c['name']}</a></td>
@@ -323,23 +323,23 @@ def generate_c_archive():
                 <td>{c['duration']}</td>
             </tr>'''
 
-    archive_html += '''    
+    index_html += '''    
         </tbody>
     </table>
 </body>
 </html>'''
 
-    open(f'archive.html', 'w', encoding='utf-8').write(archive_html)
+    open(f'index.html', 'w', encoding='utf-8').write(index_html)
     os.chdir('..')
 
 
-def generate_t_archive():
+def generate_t_index():
     import os
     os.chdir('t')
-    archive_html = '''<!DOCTYPE html>
+    index_html = '''<!DOCTYPE html>
 <html>
 <head>
-  <title>Problemset Searcher</title>
+  <title>Trainings</title>
   <meta charset="utf-8">
   <base target="_blank">
   <link rel="stylesheet" type="text/css" href="sty.css">
@@ -378,19 +378,19 @@ def generate_t_archive():
         t_json2html(t_id)
         t_json2html_t(t_id)
         t = json.loads(open(f'{t_id}.json', 'r', encoding='utf-8').read())
-        archive_html += f"<tr class=\"finder_item\" _source=\"{t['_source']}\" _cat=\"{t['_cat']}\" _grade=\"{t['_grade']}\" _diff=\"{t['_diff']}\" _link=\"{t['_link']}\" _topic=\"{t['_topic']}\" _date=\"{t['_date']}\" _num_probs=\"{t['_num_probs']}\" id=\"{t['id']}\"/>"
+        index_html += f"<tr class=\"finder_item\" _source=\"{t['_source']}\" _cat=\"{t['_cat']}\" _grade=\"{t['_grade']}\" _diff=\"{t['_diff']}\" _link=\"{t['_link']}\" _topic=\"{t['_topic']}\" _date=\"{t['_date']}\" _num_probs=\"{t['_num_probs']}\" id=\"{t['id']}\"/>"
 
-    archive_html += '''    
+    index_html += '''    
     </tbody>
   </table>
 </body>
 </html>'''
 
-    open(f'archive.html', 'w', encoding='utf-8').write(archive_html)
+    open(f'index.html', 'w', encoding='utf-8').write(index_html)
     os.chdir('..')
 
 
 if __name__ == "__main__":
-    generate_p_archive()
-    generate_c_archive()
-    generate_t_archive()
+    generate_p_index()
+    generate_c_index()
+    generate_t_index()

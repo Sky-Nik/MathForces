@@ -131,22 +131,22 @@ button.submit_problem_button {
   padding: 11px;
 }
 
-h1 {
+h1.main_header {
+  margin-left: 20%;
+  width: 60%;
+  margin-right: 20%;
+  padding: 30px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 300%;
+  text-align: center;
+}
+
+h2.main_section {
   margin-left: 20%;
   width: 60%;
   margin-right: 20%;
   padding: 20px;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 200%;
-  text-align: center
-}
-
-h2 {
-  margin-left: 20%;
-  width: 60%;
-  margin-right: 20%;
-  padding: 15px;
   background-color: #f2f2f2;
-  font-size: 1em;
+  font-size: 200%;
 }
