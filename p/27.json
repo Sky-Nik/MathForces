@@ -1,7 +1,7 @@
 {
   "type": "problem",
   "id": 27,
-  "name": "только Т-образные перекрестки",
+  "name": "Только Т-образные перекрестки",
   "source_type": "training",
   "source_id": 3,
   "tags": ["combinatorics", "graphs"],
