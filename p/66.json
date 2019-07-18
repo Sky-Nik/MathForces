@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 66,
+  "name": "Гоблинские банды",
+  "source_type": "training",
+  "source_id": 9,
+  "tags": ["combinatorics", "sets"],
+  "difficulty": "??"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 65,
+  "name": "Язык племени АУ",
+  "source_type": "training",
+  "source_id": 9,
+  "tags": ["combinatorics", "information", "words"],
+  "difficulty": "??"
+}
