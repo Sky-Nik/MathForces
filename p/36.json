@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 36,
+  "name": "Юный паяльщик",
+  "source_type": "training",
+  "source_id": 4,
+  "tags": ["combinatorics", "graphs"],
+  "difficulty": "??"
+}

@@ -18,6 +18,8 @@ def p_tex2html(p_id, path=""):
             p_html += c
     p_html = p_html.replace('---', '&mdash;')
     p_html = p_html.replace('\\dots', '&hellip;')  # please use \ldots in mathmode
+    p_html = p_html.replace('\\guillemotleft', '&laquo;')
+    p_html = p_html.replace('\\guillemotright', '&raquo;')
     return p_html
 
 

@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 35,
+  "name": "Чётное число общих знакомых",
+  "source_type": "training",
+  "source_id": 4,
+  "tags": ["combinatorics", "graphs"],
+  "difficulty": "??"
+}

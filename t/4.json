@@ -1,0 +1,16 @@
+{
+  "type": "training",
+  "id": 4,
+  "source": "Добавка к графам",
+  "name": "Считаем ребра в графах",
+  "grade": 7,
+  "p_ids": [35, 36, 37],
+  "_source": "khamovniki",
+  "_cat": "c",
+  "_grade": 7,
+  "_diff": "h",
+  "_link": "4-hard",
+  "_topic": "Добавка к графам",
+  "_date": "13.10.2018",
+  "_num_probs": 3
+}
