@@ -22,6 +22,7 @@ def p_tex2html(p_id, path=""):
     p_html = p_html.replace('\\guillemotright', '&raquo;')
     p_html = p_html.replace('\\begin{equation}', '$$')
     p_html = p_html.replace('\\end{equation}', '$$')
+    p_html = p_html.replace('\\medskip', '<br><br>')
     return p_html
 
 
