@@ -306,7 +306,7 @@ def generate_c_index():
                 <th>№</th>
                 <th>Название</th>
                 <th>Начало</th>
-                <th>Длитетльность</th>
+                <th>Длительность</th>
             </tr>
         </thead>
         <tbody>'''
