@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 39,
+  "name": "Разбойники и мешок монет",
+  "source_type": "training",
+  "source_id": 5,
+  "tags": ["number theory", "divisibility"],
+  "difficulty": "??"
+}

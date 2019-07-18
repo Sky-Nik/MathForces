@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 42,
+  "name": "Бесконечную ленту разрезали&hellip;",
+  "source_type": "training",
+  "source_id": 5,
+  "tags": ["number theory", "divisibility"],
+  "difficulty": "??"
+}

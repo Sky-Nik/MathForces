@@ -1,0 +1,16 @@
+{
+  "type": "training",
+  "id": 5,
+  "source": "Кружки в Хамовниках",
+  "name": "Делимость и остатки",
+  "grade": 7,
+  "p_ids": [38, 39, 40, 41, 42, 43],
+  "_source": "khamovniki",
+  "_cat": "n",
+  "_grade": 7,
+  "_diff": "m",
+  "_link": "6-delimost",
+  "_topic": "Делимость и остатки",
+  "_date": "20.10.2018",
+  "_num_probs": 6
+}

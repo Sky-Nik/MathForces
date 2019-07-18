@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 38,
+  "name": "Раздели камни",
+  "source_type": "training",
+  "source_id": 5,
+  "tags": ["number theory", "divisibility"],
+  "difficulty": "??"
+}
