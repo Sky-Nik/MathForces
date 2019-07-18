@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 26,
+  "name": "Егор и Леша",
+  "source_type": "training",
+  "source_id": 3,
+  "tags": ["combinatorics", "graphs"],
+  "difficulty": "??"
+}

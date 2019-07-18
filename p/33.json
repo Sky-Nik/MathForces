@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 33,
+  "name": "Максимум ребер без клик",
+  "source_type": "training",
+  "source_id": 3,
+  "tags": ["combinatorics", "graphs"],
+  "difficulty": "??"
+}

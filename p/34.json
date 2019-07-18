@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 34,
+  "name": "Ошибка статистика",
+  "source_type": "training",
+  "source_id": 3,
+  "tags": ["combinatorics", "graphs"],
+  "difficulty": "??"
+}

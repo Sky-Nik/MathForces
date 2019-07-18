@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 32,
+  "name": "Скажи &laquo;нет&raquo; треугольникам!",
+  "source_type": "training",
+  "source_id": 3,
+  "tags": ["combinatorics", "graphs"],
+  "difficulty": "??"
+}
