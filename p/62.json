@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 62,
+  "name": "11 мудрецов и тысяча цветов",
+  "source_type": "training",
+  "source_id": 8,
+  "tags": ["combinatorics", "information"],
+  "difficulty": "??"
+}

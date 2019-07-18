@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 60,
+  "name": "Золото, серебро, подделки",
+  "source_type": "training",
+  "source_id": 8,
+  "tags": ["combinatorics", "information", "weighings"],
+  "difficulty": "??"
+}

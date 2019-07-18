@@ -1,0 +1,9 @@
+{
+  "type": "problem",
+  "id": 58,
+  "name": "Легкая фальшивка",
+  "source_type": "training",
+  "source_id": 8,
+  "tags": ["combinatorics", "information", "weighings"],
+  "difficulty": "??"
+}
