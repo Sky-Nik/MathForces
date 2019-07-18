@@ -70,11 +70,11 @@ def c_json2html(c_id):
     k = 0
     for p_id in c['p_ids']:
         k += 1
-        p = json.loads(open(f'../p/{p_id}.json', 'r', encoding='utf-8').read())
+        p = json.loads(open(f'../problemset/{p_id}.json', 'r', encoding='utf-8').read())
         c_html += f'''
     <div class="problem">
         <h1 class="problem_head">Задача №{k} <span style="font-size: smaller;">({p['id']})</span>: {p['name']}</h1>
-        <p class="problem_body">{p_tex2html(p_id, path="../p/")}</p>
+        <p class="problem_body">{p_tex2html(p_id, path="../problemset/")}</p>
         <div class="submit_problem">
             <button class="submit_problem_button" onlick="submit_problem('{p_id}');">Отослать!</button>
         </div>
@@ -105,11 +105,11 @@ def t_json2html(t_id):
     k = 0
     for p_id in t['p_ids']:
         k += 1
-        p = json.loads(open(f'../p/{p_id}.json', 'r', encoding='utf-8').read())
+        p = json.loads(open(f'../problemset/{p_id}.json', 'r', encoding='utf-8').read())
         t_html += f'''
     <div class="problem">
         <h1 class="problem_head">Задача №{k} <span style="font-size: smaller;">({p['id']})</span>: {p['name']}</h1>
-        <p class="problem_body">{p_tex2html(p_id, path="../p/")}</p>
+        <p class="problem_body">{p_tex2html(p_id, path="../problemset/")}</p>
         <div class="submit_problem">
             <button class="submit_problem_button" onlick="submit_problem('{p_id}');">Отослать!</button>
         </div>
@@ -148,12 +148,12 @@ def c_json2html_t(c_id):
 
     k = 0
     for p_id in c['p_ids']:
-        p = json.loads(open(f'../p/{p_id}.json', 'r', encoding='utf-8').read())
+        p = json.loads(open(f'../problemset/{p_id}.json', 'r', encoding='utf-8').read())
         k += 1
         c_html += f'''
             <tr style="background-color: {'white' if k & 1 else '#f2f2f2'};">
-                <td><a href="../p/{p['id']}.html">{k}</a> <span style="color: gray; font-size: smaller;">({p['id']})</span></td>
-                <td><a href="../p/{p['id']}.html">{p['name']}</a></td>
+                <td><a href="../problemset/{p['id']}.html">{k}</a> <span style="color: gray; font-size: smaller;">({p['id']})</span></td>
+                <td><a href="../problemset/{p['id']}.html">{p['name']}</a></td>
                 <td><button class="submit_problem_button_inline_{'odd' if k & 1 else 'even'}" onlick="submit_problem('{p_id}');"></button></td>
             </tr>'''
 
@@ -199,12 +199,12 @@ def t_json2html_t(t_id):
 
     k = 0
     for p_id in t['p_ids']:
-        p = json.loads(open(f'../p/{p_id}.json', 'r', encoding='utf-8').read())
+        p = json.loads(open(f'../problemset/{p_id}.json', 'r', encoding='utf-8').read())
         k += 1
         t_html += f'''
             <tr style="background-color: {'white' if k & 1 else '#f2f2f2'};">
-                <td><a href="../p/{p['id']}.html">{k}</a> <span style="color: gray; font-size: smaller;">({p['id']})</span></td>
-                <td><a href="../p/{p['id']}.html">{p['name']}</a></td>
+                <td><a href="../problemset/{p['id']}.html">{k}</a> <span style="color: gray; font-size: smaller;">({p['id']})</span></td>
+                <td><a href="../problemset/{p['id']}.html">{p['name']}</a></td>
                 <td><button class="submit_problem_button_inline_{'odd' if k & 1 else 'even'}" onlick="submit_problem('{p_id}');"></button></td>
             </tr>'''
 
@@ -229,8 +229,8 @@ def ps2c_tex(p_ids, c_id):
     c_tex = '\\input{c.sty}\n\n\\begin{document}\n\n\\title{Соревнование ' + f"№{c_id}: {c['name']}" + '}\n\\maketitle\n\n'
 
     for p_id in p_ids:
-        p = json.loads(open(f'../p/{p_id}.json', 'r', encoding='utf-8').read())
-        c_tex += '\\begin{problem}' + f"[{p['name']}]" + '\n\t' + open(f'../p/{p_id}.tex', 'r', encoding='utf-8').read()+ '\n\\end{problem}\n\n'
+        p = json.loads(open(f'../problemset/{p_id}.json', 'r', encoding='utf-8').read())
+        c_tex += '\\begin{problem}' + f"[{p['name']}]" + '\n\t' + open(f'../problemset/{p_id}.tex', 'r', encoding='utf-8').read()+ '\n\\end{problem}\n\n'
 
     c_tex += '\\end{document}'
     open(f'{c_id}.tex', 'w', encoding='utf-8').write(c_tex)
@@ -241,8 +241,8 @@ def ps2t_tex(p_ids, t_id):
     t_tex = '\\input{t.sty}\n\n\\begin{document}\n\n\\title{Тренировка ' + f"№{t_id}: {t['name']}" + '}\n\\maketitle\n\n'
 
     for p_id in p_ids:
-        p = json.loads(open(f'../p/{p_id}.json', 'r', encoding='utf-8').read())
-        t_tex += '\\begin{problem}' + f"[{p['name']}]" + '\n\t' + open(f'../p/{p_id}.tex', 'r', encoding='utf-8').read()+ '\n\\end{problem}\n\n'
+        p = json.loads(open(f'../problemset/{p_id}.json', 'r', encoding='utf-8').read())
+        t_tex += '\\begin{problem}' + f"[{p['name']}]" + '\n\t' + open(f'../problemset/{p_id}.tex', 'r', encoding='utf-8').read()+ '\n\\end{problem}\n\n'
 
     t_tex += '\\end{document}'
     open(f'{t_id}.tex', 'w', encoding='utf-8').write(t_tex)
@@ -250,7 +250,7 @@ def ps2t_tex(p_ids, t_id):
 
 def generate_p_index():
     import os
-    os.chdir('p')
+    os.chdir('problemset')
     index_html = '''
 <!DOCTYPE html>
 <html>
@@ -295,7 +295,7 @@ def generate_p_index():
 
 def generate_c_index():
     import os
-    os.chdir('c')
+    os.chdir('contests')
     index_html = '''<!DOCTYPE html>
 <html>
 <head>
@@ -340,7 +340,7 @@ def generate_c_index():
 
 def generate_t_index():
     import os
-    os.chdir('t')
+    os.chdir('gyms')
     index_html = '''<!DOCTYPE html>
 <html>
 <head>
