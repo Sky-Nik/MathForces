@@ -49,7 +49,7 @@ function update_params(param_type, param_value) {
   var elements = document.getElementsByTagName('tr');
   // alert('DEBUG: ' + elements.length);
   var k = 0; // matches counter
-  for (var i = 0; i < elements.length; ++i) {
+  for (var i = 1; i < elements.length; ++i) {
     if ((CURRENT_CATEGORY   === "all" || elements[i].getAttribute('_cat')   === CURRENT_CATEGORY) &&
         (CURRENT_GRADE      === "all" || elements[i].getAttribute('_grade') === CURRENT_GRADE) &&
         (CURRENT_DIFFICULTY === "all" || elements[i].getAttribute('_diff')  === CURRENT_DIFFICULTY)) {
@@ -124,5 +124,5 @@ function compile_filters() {
   }
   document.getElementById("FILTER_BY_DIFFICULTY").innerHTML += '<div class="dropdown-content">' + s + '</div>';
 
-  document.getElementById("classes_found").textContent = "Занять: " + document.getElementsByTagName('tr').length;
+  document.getElementById("classes_found").textContent = "Занять: " + document.getElementsByTagName('tr').length - 1;
 };
