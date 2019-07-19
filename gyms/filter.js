@@ -47,6 +47,7 @@ function update_params(param_type, param_value) {
 
   // update gym_items
   var elements = document.getElementsByClassName("gym_item");
+  alert('DEBUG: ' + elements.length);
   var k = 0; // matches counter
   for (var i = 0; i < elements.length; ++i) {
     if ((CURRENT_CATEGORY   === "all" || elements[i].getAttribute('_cat')   === CURRENT_CATEGORY) &&

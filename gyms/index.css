@@ -274,3 +274,15 @@ th, td {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.gym-date {
+  text-align: center;
+}
+
+.gym-grade {
+  text-align: center;
+}
+
+.gym-difficulty {
+  text-align: center;
+}
