@@ -124,5 +124,5 @@ function compile_filters() {
   }
   document.getElementById("FILTER_BY_DIFFICULTY").innerHTML += '<div class="dropdown-content">' + s + '</div>';
 
-  document.getElementById("classes_found").textContent = "Занятий: " + document.getElementsByClassName("finder_item").length;
+  document.getElementById("classes_found").textContent = "Занятий: " + document.getElementsByClassName("gym_item").length;
 };
