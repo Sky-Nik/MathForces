@@ -230,7 +230,7 @@ th {
 
 td {
   max-width: 350px;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 th, td {
@@ -247,6 +247,7 @@ th, td {
 
 .contest-start-time-column {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .contest-duration-column {
