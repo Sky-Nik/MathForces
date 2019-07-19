@@ -286,3 +286,7 @@ th, td {
 .gym-difficulty {
   text-align: center;
 }
+
+.gym_item {
+  background-color: red;
+}
