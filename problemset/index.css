@@ -297,13 +297,13 @@ th, td {
   clear: both;
 }
 
-.problem_body {
+p.problem_body {
   padding: 15px;
   background-color: #f2f2f2;
   font-size: 1em;
 }
 
-.problem_head {
+h1.problem_head {
   padding: 15px;
   background-color: #4CAF50;
   color: white;
