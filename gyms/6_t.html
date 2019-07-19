@@ -2,81 +2,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Тренировка №6: Уравнения в целых числах</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../sty.css">
-    <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
-    </script>
+  <title>Тренування №6 | MathForces</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/MathForces/contests/index.css">
+  <script type="text/javascript" src="/MathForces/countdown.js"></script>
+  <script type="text/javascript" src="/MathForces/contests/compiler.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
 </head>
 <body>
-    <table>
+  <div class="header">
+    <div class="logo">
+      <a href="/MathForces/">
+        <img src="/MathForces/img/logo-300x65.png">
+      </a>
+    </div>
+    <div class="right">
+      <div class="lang-chooser">
+        <a href="/MathForces/index_en.html">
+          <img src="/MathForces/img/gb.png" title="In English" alt="In English">
+        </a>
+        <!-- <a href="?locale=ru">
+          <img src="ru.png" title="По-русски" alt="По-русски">
+        </a> -->
+        <a href="index.html">
+          <img src="/MathForces/img/ua.png" title="Українською" alt="Українською">
+        </a>
+      </div>
+      <div class="login">
+        <a href="/MathForces/enter.html?back=%2f">Увійти</a>&ensp;|&ensp;<a href="/MathForces/register.html">Зареєструватися</a>
+      </div>
+    </div>
+  </div>
+  <div class="roundbox menu-box">
+    <div class="menu-list-container">
+      <ul class="menu-list main-menu-list">
+        <li class>
+          <a href="/MathForces/">ГОЛОВНА</a>
+        </li>
+        <li class>
+          <a href="/MathForces/contests/">ЗМАГАННЯ</a>
+        </li>
+        <li class="current">
+          <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/problemset/">АРХІВ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/groups/">ГРУПИ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/blogs/">БЛОГИ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br style="height: 3em; clear: both;">
+  <div style="position: relative;">
+    <div id="pageContent">
+      <table>
         <thead>
-            <th>№</th>
-            <th>Название</th>
-            <th></th>
+          <th>№</th>
+          <th>Название</th>
+          <th></th>
         </thead>
         <tbody>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/44.html">1</a> <span style="color: gray; font-size: smaller;">(44)</span></td>
-                <td><a href="../problemset/44.html">p<sup>q</sup> &plus; q<sup>p</sup></a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('44');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/45.html">2</a> <span style="color: gray; font-size: smaller;">(45)</span></td>
-                <td><a href="../problemset/45.html">123456<sup>m</sup> и 1000<sup>m</sup></a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('45');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/46.html">3</a> <span style="color: gray; font-size: smaller;">(46)</span></td>
-                <td><a href="../problemset/46.html">11, 111, 1111, &hellip; и квадраты</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('46');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/47.html">4</a> <span style="color: gray; font-size: smaller;">(47)</span></td>
-                <td><a href="../problemset/47.html">p<sup>q</sup> &plus; q<sup>p</sup> (2)</a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('47');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/48.html">5</a> <span style="color: gray; font-size: smaller;">(48)</span></td>
-                <td><a href="../problemset/48.html">a<sup>2</sup> &plus; 9ab &plus; b<sup>2</sup></a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('48');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/49.html">6</a> <span style="color: gray; font-size: smaller;">(49)</span></td>
-                <td><a href="../problemset/49.html">x<sup>3</sup> &plus; 3xy(x + y) &plus; 2y<sup>3</sup></a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('49');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/50.html">7</a> <span style="color: gray; font-size: smaller;">(50)</span></td>
-                <td><a href="../problemset/50.html">x<sup>2</sup> &plus; y<sup>2</sup> &minus; 5xy &plus; 4</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('50');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/51.html">8</a> <span style="color: gray; font-size: smaller;">(51)</span></td>
-                <td><a href="../problemset/51.html">1<sup>n</sup> &plus; 2<sup>n</sup> + &hellip; &plus; n<sup>n</sup></a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('51');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/52.html">9</a> <span style="color: gray; font-size: smaller;">(52)</span></td>
-                <td><a href="../problemset/52.html">3<sup>x</sup> &plus; 4<sup>y</sup> = 5<sup>z</sup></a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('52');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/53.html">10</a> <span style="color: gray; font-size: smaller;">(53)</span></td>
-                <td><a href="../problemset/53.html">x<sup>8</sup> &plus; 2<sup>2<sup>x</sup>&plus;2</sup> = p</a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('53');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/54.html">11</a> <span style="color: gray; font-size: smaller;">(54)</span></td>
-                <td><a href="../problemset/54.html">Два куба и квадрат</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('54');"></button></td>
-            </tr><tr style="background-color: #f2f2f2;">
-        <td></td>
-        <td><a href="6.html">Все задачи</a></td>
-        <td></td>
-    </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/44">1</a> <span style="color: gray; font-size: smaller;">(44)</span></td>
+            <td><a href="../problemset/44">p<sup>q</sup> &plus; q<sup>p</sup></a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('44');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/45">2</a> <span style="color: gray; font-size: smaller;">(45)</span></td>
+            <td><a href="../problemset/45">123456<sup>m</sup> и 1000<sup>m</sup></a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('45');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/46">3</a> <span style="color: gray; font-size: smaller;">(46)</span></td>
+            <td><a href="../problemset/46">11, 111, 1111, &hellip; и квадраты</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('46');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/47">4</a> <span style="color: gray; font-size: smaller;">(47)</span></td>
+            <td><a href="../problemset/47">p<sup>q</sup> &plus; q<sup>p</sup> (2)</a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('47');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/48">5</a> <span style="color: gray; font-size: smaller;">(48)</span></td>
+            <td><a href="../problemset/48">a<sup>2</sup> &plus; 9ab &plus; b<sup>2</sup></a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('48');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/49">6</a> <span style="color: gray; font-size: smaller;">(49)</span></td>
+            <td><a href="../problemset/49">x<sup>3</sup> &plus; 3xy(x + y) &plus; 2y<sup>3</sup></a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('49');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/50">7</a> <span style="color: gray; font-size: smaller;">(50)</span></td>
+            <td><a href="../problemset/50">x<sup>2</sup> &plus; y<sup>2</sup> &minus; 5xy &plus; 4</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('50');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/51">8</a> <span style="color: gray; font-size: smaller;">(51)</span></td>
+            <td><a href="../problemset/51">1<sup>n</sup> &plus; 2<sup>n</sup> + &hellip; &plus; n<sup>n</sup></a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('51');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/52">9</a> <span style="color: gray; font-size: smaller;">(52)</span></td>
+            <td><a href="../problemset/52">3<sup>x</sup> &plus; 4<sup>y</sup> = 5<sup>z</sup></a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('52');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/53">10</a> <span style="color: gray; font-size: smaller;">(53)</span></td>
+            <td><a href="../problemset/53">x<sup>8</sup> &plus; 2<sup>2<sup>x</sup>&plus;2</sup> = p</a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('53');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/54">11</a> <span style="color: gray; font-size: smaller;">(54)</span></td>
+            <td><a href="../problemset/54">Два куба и квадрат</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('54');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td></td>
+            <td><a href="6.html">Всі задачі</a></td>
+            <td></td>
+          </tr>
         </tbody>
-    </table
+      </table
+    </div>
+  </div>
 </body>
 </html>

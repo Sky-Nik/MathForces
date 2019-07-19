@@ -2,71 +2,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Тренировка №2: Клеточная оценка+пример</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../sty.css">
-    <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
-    </script>
+  <title>Тренування №2 | MathForces</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/MathForces/contests/index.css">
+  <script type="text/javascript" src="/MathForces/countdown.js"></script>
+  <script type="text/javascript" src="/MathForces/contests/compiler.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
 </head>
 <body>
-    <table>
+  <div class="header">
+    <div class="logo">
+      <a href="/MathForces/">
+        <img src="/MathForces/img/logo-300x65.png">
+      </a>
+    </div>
+    <div class="right">
+      <div class="lang-chooser">
+        <a href="/MathForces/index_en.html">
+          <img src="/MathForces/img/gb.png" title="In English" alt="In English">
+        </a>
+        <!-- <a href="?locale=ru">
+          <img src="ru.png" title="По-русски" alt="По-русски">
+        </a> -->
+        <a href="index.html">
+          <img src="/MathForces/img/ua.png" title="Українською" alt="Українською">
+        </a>
+      </div>
+      <div class="login">
+        <a href="/MathForces/enter.html?back=%2f">Увійти</a>&ensp;|&ensp;<a href="/MathForces/register.html">Зареєструватися</a>
+      </div>
+    </div>
+  </div>
+  <div class="roundbox menu-box">
+    <div class="menu-list-container">
+      <ul class="menu-list main-menu-list">
+        <li class>
+          <a href="/MathForces/">ГОЛОВНА</a>
+        </li>
+        <li class>
+          <a href="/MathForces/contests/">ЗМАГАННЯ</a>
+        </li>
+        <li class="current">
+          <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/problemset/">АРХІВ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/groups/">ГРУПИ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/blogs/">БЛОГИ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br style="height: 3em; clear: both;">
+  <div style="position: relative;">
+    <div id="pageContent">
+      <table>
         <thead>
-            <th>№</th>
-            <th>Название</th>
-            <th></th>
+          <th>№</th>
+          <th>Название</th>
+          <th></th>
         </thead>
         <tbody>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/17.html">1</a> <span style="color: gray; font-size: smaller;">(17)</span></td>
-                <td><a href="../problemset/17.html">Мирная шахматная сходка</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('17');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/18.html">2</a> <span style="color: gray; font-size: smaller;">(18)</span></td>
-                <td><a href="../problemset/18.html">Почти кубик Рубика 2&times;2&times;2</a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('18');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/19.html">3</a> <span style="color: gray; font-size: smaller;">(19)</span></td>
-                <td><a href="../problemset/19.html">Гепард гепарду друг</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('19');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/20.html">4</a> <span style="color: gray; font-size: smaller;">(20)</span></td>
-                <td><a href="../problemset/20.html">Ладьи бьют друг друга</a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('20');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/21.html">5</a> <span style="color: gray; font-size: smaller;">(21)</span></td>
-                <td><a href="../problemset/21.html">Короли бьют всю доску</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('21');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/22.html">6</a> <span style="color: gray; font-size: smaller;">(22)</span></td>
-                <td><a href="../problemset/22.html">Карлсон, Малыш, и квадратный торт</a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('22');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/23.html">7</a> <span style="color: gray; font-size: smaller;">(23)</span></td>
-                <td><a href="../problemset/23.html">&laquo;Равномерное&raquo; распределение фишек</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('23');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/24.html">8</a> <span style="color: gray; font-size: smaller;">(24)</span></td>
-                <td><a href="../problemset/24.html">Черно-белые треугольники</a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('24');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/25.html">9</a> <span style="color: gray; font-size: smaller;">(25)</span></td>
-                <td><a href="../problemset/25.html">Петя, Вася, и дорогая игра</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('25');"></button></td>
-            </tr><tr style="background-color: #f2f2f2;">
-        <td></td>
-        <td><a href="2.html">Все задачи</a></td>
-        <td></td>
-    </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/17">1</a> <span style="color: gray; font-size: smaller;">(17)</span></td>
+            <td><a href="../problemset/17">Мирная шахматная сходка</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('17');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/18">2</a> <span style="color: gray; font-size: smaller;">(18)</span></td>
+            <td><a href="../problemset/18">Почти кубик Рубика 2&times;2&times;2</a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('18');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/19">3</a> <span style="color: gray; font-size: smaller;">(19)</span></td>
+            <td><a href="../problemset/19">Гепард гепарду друг</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('19');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/20">4</a> <span style="color: gray; font-size: smaller;">(20)</span></td>
+            <td><a href="../problemset/20">Ладьи бьют друг друга</a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('20');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/21">5</a> <span style="color: gray; font-size: smaller;">(21)</span></td>
+            <td><a href="../problemset/21">Короли бьют всю доску</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('21');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/22">6</a> <span style="color: gray; font-size: smaller;">(22)</span></td>
+            <td><a href="../problemset/22">Карлсон, Малыш, и квадратный торт</a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('22');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/23">7</a> <span style="color: gray; font-size: smaller;">(23)</span></td>
+            <td><a href="../problemset/23">&laquo;Равномерное&raquo; распределение фишек</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('23');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/24">8</a> <span style="color: gray; font-size: smaller;">(24)</span></td>
+            <td><a href="../problemset/24">Черно-белые треугольники</a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('24');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/25">9</a> <span style="color: gray; font-size: smaller;">(25)</span></td>
+            <td><a href="../problemset/25">Петя, Вася, и дорогая игра</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('25');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td></td>
+            <td><a href="2.html">Всі задачі</a></td>
+            <td></td>
+          </tr>
         </tbody>
-    </table
+      </table
+    </div>
+  </div>
 </body>
 </html>

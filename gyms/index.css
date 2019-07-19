@@ -295,3 +295,46 @@ th, td {
   font-size: 1em;
   clear: both;
 }
+
+p.problem_body {
+  padding: 15px;
+  background-color: #f2f2f2;
+  font-size: 1em;
+}
+
+h1.problem_head {
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 150%;
+}
+
+div.submit_problem button.submit_problem_button {
+  margin-left: auto;
+  margin-right: 0;
+  display: block; 
+}
+
+button.submit_problem_button {
+  background-color: white; 
+  border-radius: 18px;
+  border-color: #4CAF50;
+  border-width: 3px;
+  padding: 9px;
+}
+
+button.submit_problem_button_inline_odd {
+  background: white url("/MathForces/img/submit-22x22.png") no-repeat right top;
+  border-radius: 0px;
+  /*border-color: #4CAF50;*/
+  border-width: 0px;
+  padding: 11px;
+}
+
+button.submit_problem_button_inline_even {
+  background: #f2f2f2 url("/MathForces/img/submit-22x22.png") no-repeat right top;
+  border-radius: 0px;
+  /*border-color: #4CAF50;*/
+  border-width: 0px;
+  padding: 11px;
+}

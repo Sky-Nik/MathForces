@@ -2,61 +2,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Тренировка №8: Информация и кодирование</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../sty.css">
-    <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
-    </script>
+  <title>Тренування №8 | MathForces</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/MathForces/contests/index.css">
+  <script type="text/javascript" src="/MathForces/countdown.js"></script>
+  <script type="text/javascript" src="/MathForces/contests/compiler.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
 </head>
 <body>
-    <table>
+  <div class="header">
+    <div class="logo">
+      <a href="/MathForces/">
+        <img src="/MathForces/img/logo-300x65.png">
+      </a>
+    </div>
+    <div class="right">
+      <div class="lang-chooser">
+        <a href="/MathForces/index_en.html">
+          <img src="/MathForces/img/gb.png" title="In English" alt="In English">
+        </a>
+        <!-- <a href="?locale=ru">
+          <img src="ru.png" title="По-русски" alt="По-русски">
+        </a> -->
+        <a href="index.html">
+          <img src="/MathForces/img/ua.png" title="Українською" alt="Українською">
+        </a>
+      </div>
+      <div class="login">
+        <a href="/MathForces/enter.html?back=%2f">Увійти</a>&ensp;|&ensp;<a href="/MathForces/register.html">Зареєструватися</a>
+      </div>
+    </div>
+  </div>
+  <div class="roundbox menu-box">
+    <div class="menu-list-container">
+      <ul class="menu-list main-menu-list">
+        <li class>
+          <a href="/MathForces/">ГОЛОВНА</a>
+        </li>
+        <li class>
+          <a href="/MathForces/contests/">ЗМАГАННЯ</a>
+        </li>
+        <li class="current">
+          <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/problemset/">АРХІВ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/groups/">ГРУПИ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/blogs/">БЛОГИ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br style="height: 3em; clear: both;">
+  <div style="position: relative;">
+    <div id="pageContent">
+      <table>
         <thead>
-            <th>№</th>
-            <th>Название</th>
-            <th></th>
+          <th>№</th>
+          <th>Название</th>
+          <th></th>
         </thead>
         <tbody>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/58.html">1</a> <span style="color: gray; font-size: smaller;">(58)</span></td>
-                <td><a href="../problemset/58.html">Легкая фальшивка</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('58');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/59.html">2</a> <span style="color: gray; font-size: smaller;">(59)</span></td>
-                <td><a href="../problemset/59.html">Магазин &laquo;Одуванчик&raquo; и Клавдия Петровна</a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('59');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/60.html">3</a> <span style="color: gray; font-size: smaller;">(60)</span></td>
-                <td><a href="../problemset/60.html">Золото, серебро, подделки</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('60');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/61.html">4</a> <span style="color: gray; font-size: smaller;">(61)</span></td>
-                <td><a href="../problemset/61.html">Две группы</a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('61');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/62.html">5</a> <span style="color: gray; font-size: smaller;">(62)</span></td>
-                <td><a href="../problemset/62.html">11 мудрецов и тысяча цветов</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('62');"></button></td>
-            </tr>
-            <tr style="background-color: #f2f2f2;">
-                <td><a href="../problemset/63.html">6</a> <span style="color: gray; font-size: smaller;">(63)</span></td>
-                <td><a href="../problemset/63.html">Энакин и имена</a></td>
-                <td><button class="submit_problem_button_inline_even" onlick="submit_problem('63');"></button></td>
-            </tr>
-            <tr style="background-color: white;">
-                <td><a href="../problemset/64.html">7</a> <span style="color: gray; font-size: smaller;">(64)</span></td>
-                <td><a href="../problemset/64.html">Лабораторные крысы и яд</a></td>
-                <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('64');"></button></td>
-            </tr><tr style="background-color: #f2f2f2;">
-        <td></td>
-        <td><a href="8.html">Все задачи</a></td>
-        <td></td>
-    </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/58">1</a> <span style="color: gray; font-size: smaller;">(58)</span></td>
+            <td><a href="../problemset/58">Легкая фальшивка</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('58');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/59">2</a> <span style="color: gray; font-size: smaller;">(59)</span></td>
+            <td><a href="../problemset/59">Магазин &laquo;Одуванчик&raquo; и Клавдия Петровна</a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('59');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/60">3</a> <span style="color: gray; font-size: smaller;">(60)</span></td>
+            <td><a href="../problemset/60">Золото, серебро, подделки</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('60');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/61">4</a> <span style="color: gray; font-size: smaller;">(61)</span></td>
+            <td><a href="../problemset/61">Две группы</a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('61');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/62">5</a> <span style="color: gray; font-size: smaller;">(62)</span></td>
+            <td><a href="../problemset/62">11 мудрецов и тысяча цветов</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('62');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td><a href="../problemset/63">6</a> <span style="color: gray; font-size: smaller;">(63)</span></td>
+            <td><a href="../problemset/63">Энакин и имена</a></td>
+            <td><button class="submit_problem_button_inline_even" onlick="submit_problem('63');"></button></td>
+          </tr>
+          <tr style="background-color: white;">
+            <td><a href="../problemset/64">7</a> <span style="color: gray; font-size: smaller;">(64)</span></td>
+            <td><a href="../problemset/64">Лабораторные крысы и яд</a></td>
+            <td><button class="submit_problem_button_inline_odd" onlick="submit_problem('64');"></button></td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td></td>
+            <td><a href="8.html">Всі задачі</a></td>
+            <td></td>
+          </tr>
         </tbody>
-    </table
+      </table
+    </div>
+  </div>
 </body>
 </html>
