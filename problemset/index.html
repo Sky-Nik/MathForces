@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <!-- <link rel="stylesheet" type="text/css" href="/MathForces/problemset/index.css"> -->
   <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" src="/MathForces/countdown.js"></script>
+  <script type="text/javascript" src="filter.js"></script>
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 </head>
-<body>
+<body onload="compile_filters();">
   <div class="header">
     <div class="logo">
       <a href="/MathForces/">
@@ -79,7 +81,7 @@
           → Фільтр задач
         </div>
         <div id="problemFilter" style="padding: 0.25em; border-radius: 5px 5px 0 0;">
-          <button class="dropbtn" id="classes_found">Задач: </button>
+          <button class="dropbtn" id="problems_found">Задач: </button>
         </div>
       </div>
     </div>

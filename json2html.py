@@ -248,48 +248,11 @@ def ps2t_tex(p_ids, t_id):
     open(f'{t_id}.tex', 'w', encoding='utf-8').write(t_tex)
 
 
-def generate_p_index():
+def all_p_json2html():
     import os
     os.chdir('problemset')
-    index_html = '''
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Problems</title>
-    <meta charset="utf-8">
-    <base target="_blank">
-    <link rel="stylesheet" type="text/css" href="../sty.css">
-</head>
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th>№</th>
-                <th>Название</th>
-                <th>Теги</th>
-                <th>Сложность</th>
-            </tr>
-        </thead>
-        <tbody>'''
-    
     for p_id in map(lambda _: _[:-5], filter(lambda _: _[-5:] == '.json', os.listdir())):
         p_json2html(p_id)
-        p = json.loads(open(f'{p_id}.json', 'r', encoding='utf-8').read())
-        index_html += f'''
-            <tr>
-                <td><a href="{p['id']}.html">{p['id']}</a></td>
-                <td><a href="{p['id']}.html">{p['name']}</a></td>
-                <td class="problem_tags">{', '.join(p['tags'])}</td>
-                <td>{p['difficulty']}</td>
-            </tr>'''
-
-    index_html += '''    
-        </tbody>
-    </table>
-</body>
-</html>'''
-
-    open(f'index.html', 'w', encoding='utf-8').write(index_html)
     os.chdir('..')
 
 
@@ -312,6 +275,6 @@ def all_t_json2html():
 
 
 if __name__ == "__main__":
-    generate_p_index()
+    all_p_json2html()
     all_c_json2html()
     all_t_json2html()
