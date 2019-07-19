@@ -217,3 +217,62 @@ div.ttypography {
   clear: both;
   height: 4em;
 }
+
+.imgrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.imgcol {
+  flex: 50%;
+  padding: 0 1em;
+}
+
+.imgcol img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.ioo-container {
+  position: relative;
+  width: 45%;
+  margin: 1em;
+}
+
+.ioo-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.ioo-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: -4em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 25em;
+}
+
+.ioo-container:hover .ioo-image {
+  opacity: 0.85;
+}
+
+.ioo-container:hover .ioo-middle {
+  opacity: 1;
+}
+
+.ioo-text {
+  /*background-color: #4CAF50;*/
+  color: white;
+  font-size: 2rem;
+  padding: 16px 32px;
+}
