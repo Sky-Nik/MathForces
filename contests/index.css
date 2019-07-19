@@ -289,7 +289,7 @@ button.submit_problem_button {
   padding: 9px;
 }
 
-.submit_problem_button_inline_odd {
+button.submit_problem_button_inline_odd {
   background: white url("/MathForces/img/submit-22x22.png") no-repeat right top;
   border-radius: 0px;
   /*border-color: #4CAF50;*/
@@ -297,7 +297,7 @@ button.submit_problem_button {
   padding: 11px;
 }
 
-.submit_problem_button_inline_even {
+button.submit_problem_button_inline_even {
   background: #f2f2f2 url("/MathForces/img/submit-22x22.png") no-repeat right top;
   border-radius: 0px;
   /*border-color: #4CAF50;*/
