@@ -7,8 +7,10 @@
   <script type="text/javascript" src="/MathForces/countdown.js"></script>
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  <!-- <script type="text/javascript" src="/MathForces/convertDates.js"></script> -->
+  <script type="text/javascript" src="convertDates.js"></script>
 </head>
-<body>
+<body onload="convertDates();">
   <div class="header">
     <div class="logo">
       <a href="/MathForces/">
@@ -82,7 +84,7 @@
               Розбір відбіркової олімпіади</a>
           </div>
           <div class="info" style="position:relative;">
-            Автор <span class="rated-user user-black">Nikita.Skybytskyi</span>, сьогодні, <img style="position: relative;top: 5px;" src="img/ua.png" title="Українською" alt="Українською">
+            Автор <span class="rated-user user-black">Nikita.Skybytskyi</span>, <span class="human-readable-date" date='Fri, 19 July 2019 19:26:00'></span>, <img style="position: relative;top: 5px;" src="img/ua.png" title="Українською" alt="Українською">
           </div>
           <div class="content">
             <div class="ttypography">
