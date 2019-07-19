@@ -75,7 +75,7 @@ def p_json2html(p_id):
           <a href="/MathForces/contests/">ЗМАГАННЯ</a>
         </li>
         <li class>
-          <a href="/MathForces/problems/">ТРЕНУВАННЯ</a>
+          <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
         </li>
         <li class="current">
           <a href="/MathForces/problemset/">АРХІВ</a>
