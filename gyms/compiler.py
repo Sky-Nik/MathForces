@@ -29,7 +29,7 @@ if __name__ == '__main__':
   for file in filter(lambda _: os.path.splitext(_)[1] == '.json', os.listdir()):
     gym = json.loads(open(file, 'r', encoding='utf-8').read())
     assert gym['type'] == 'gym'
-    compiled_gyms_table += f'''              <tr _cat="{gym['_cat']}" _grade="{gym['_grade']}" _diff="{gym['_diff']}" сlass="gymitem">
+    compiled_gyms_table += f'''              <tr _cat="{gym['_cat']}" _grade="{gym['_grade']}" _diff="{gym['_diff']}" сlass="gymitem" class>
                 <td class="gym-source">{gym['source']}</td>
                 <td class="gym-category">{LOCAL_CATEGORY_NAMES_UPPERCASE[gym['_cat']]}</td>
                 <td class="gym-topic">{gym['name']}: 
