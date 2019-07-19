@@ -1,16 +1,13 @@
 {
-  "type": "training",
+  "type": "gym",
   "id": 2,
   "source": "Кружки в Хамовниках",
   "name": "Клеточная оценка+пример",
-  "grade": 7,
   "p_ids": [17, 18, 19, 20, 21, 22, 23, 24, 25],
-  "_source": "khamovniki",
   "_cat": "c",
   "_grade": 7,
   "_diff": "m",
-  "_link": "2-kletochki",
-  "_topic": "Клеточная оценка+пример",
-  "_date": "29.9.2018",
+  "pdf_link": "khamovniki/7/2-kletochki",
+  "_date": "29.09.2018",
   "_num_probs": 9
 }

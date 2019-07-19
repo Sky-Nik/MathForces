@@ -1,16 +1,13 @@
 {
-  "type": "training",
+  "type": "gym",
   "id": 4,
   "source": "Кружки в Хамовниках",
   "name": "Добавка к графам",
-  "grade": 7,
   "p_ids": [35, 36, 37],
-  "_source": "khamovniki",
   "_cat": "c",
   "_grade": 7,
   "_diff": "h",
-  "_link": "4-hard",
-  "_topic": "Добавка к графам",
+  "pdf_link": "khamovniki/7/4-hard",
   "_date": "13.10.2018",
   "_num_probs": 3
 }

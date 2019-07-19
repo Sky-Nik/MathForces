@@ -1,16 +1,13 @@
 {
-  "type": "training",
+  "type": "gym",
   "id": 10,
   "source": "Кружки в Хамовниках",
   "name": "Деревья",
-  "grade": 7,
-  "p_ids": [68, 69, 70, 71, 72, 73, 74, 75, 76],
-  "_source": "khamovniki",
-  "_cat": "c",
   "_grade": 7,
+  "p_ids": [68, 69, 70, 71, 72, 73, 74, 75, 76],
+  "_cat": "c",
   "_diff": "m",
-  "_link": "11-trees",
-  "_topic": "Деревья",
+  "pdf_link": "khamovniki/7/11-trees",
   "_date": "24.11.2018",
   "_num_probs": 9
 }

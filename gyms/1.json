@@ -1,16 +1,13 @@
 {
-  "type": "training",
+  "type": "gym",
   "id": 1,
   "source": "Кружки в Хамовниках",
   "name": "Разные раскраски",
-  "grade": 7,
   "p_ids": ["8a", "8b", 9, 10, "11a", "11b", 12, 13, 14, 15, 16],
-  "_source": "khamovniki",
   "_cat": "c",
   "_grade": 7,
   "_diff": "m",
-  "_link": "1-raskraski",
-  "_topic": "Разные раскраски",
-  "_date": "22.9.2018",
+  "pdf_link": "khamovniki/7/1-raskraski",
+  "_date": "22.09.2018",
   "_num_probs": 9
 }

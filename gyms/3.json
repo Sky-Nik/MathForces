@@ -1,16 +1,13 @@
 {
-  "type": "training",
+  "type": "gym",
   "id": 3,
   "source": "Кружки в Хамовниках",
   "name": "Считаем ребра в графах",
-  "grade": 7,
   "p_ids": [26, 27, 28, 29, "30a", "30b", 31, 32, 33, 34],
-  "_source": "khamovniki",
   "_cat": "c",
   "_grade": 7,
   "_diff": "m",
-  "_link": "3-graph",
-  "_topic": "Считаем ребра в графах",
-  "_date": "6.10.2018",
+  "pdf_link": "khamovniki/7/3-graph",
+  "_date": "06.10.2018",
   "_num_probs": 9
 }

@@ -1,16 +1,13 @@
 {
-  "type": "training",
+  "type": "gym",
   "id": 11,
   "source": "Кружки в Хамовниках",
   "name": "Комбинаторные доказательства",
-  "grade": 7,
   "p_ids": [77, 78, 79, 80, 81],
-  "_source": "khamovniki",
   "_cat": "c",
   "_grade": 7,
   "_diff": "m",
-  "_link": "12-cshki",
-  "_topic": "Комбинаторные доказательства",
+  "pdf_link": "khamovniki/7/12-cshki",
   "_date": "15.12.2018",
   "_num_probs": 5
 }

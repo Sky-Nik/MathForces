@@ -1,41 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Trainings</title>
+  <title>MathForces</title>
   <meta charset="utf-8">
-  <base target="_blank">
-  <link rel="stylesheet" type="text/css" href="sty.css">
-  <script type="text/javascript" src="filter.js"></script>
-  <script type="text/javascript" src="compiler.js"></script>
+  <link rel="stylesheet" type="text/css" href="/MathForces/gyms/index.css">
+  <script type="text/javascript" src="/MathForces/gyms/filter.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#gyms-table-body").load("compiled_gyms_table.html"); 
+    });
+  </script> 
 </head>
-<body onload="compile_filters();compile_finder_items();compile_classes_found();">
-  <div id="menu">
-    <div class="dropdown" id="FILTER_BY_CATEGORY">
-      <button class="dropbtn" id="FILTER_BY_CATEGORY_BUTTON">Выбор по тематике</button>
+<body onload="compile_filters();">
+  <div class="header">
+    <div class="logo">
+      <a href="/MathForces/">
+        <img src="/MathForces/img/logo-300x65.png">
+      </a>
     </div>
-    <div class="dropdown" id="FILTER_BY_GRADE">
-      <button class="dropbtn" id="FILTER_BY_GRADE_BUTTON">Выбор по классу</button>
+    <div class="right">
+      <div class="lang-chooser">
+        <a href="/MathForces/index_en.html">
+          <img src="/MathForces/img/gb.png" title="In English" alt="In English">
+        </a>
+        <!-- <a href="?locale=ru">
+          <img src="ru.png" title="По-русски" alt="По-русски">
+        </a> -->
+        <a href="index.html">
+          <img src="/MathForces/img/ua.png" title="Українською" alt="Українською">
+        </a>
+      </div>
+      <div class="login">
+        <a href="/MathForces/enter.html?back=%2f">Увійти</a>&ensp;|&ensp;<a href="/MathForces/register.html">Зареєструватися</a>
+      </div>
     </div>
-    <div class="dropdown" id="FILTER_BY_DIFFICULTY">
-      <button class="dropbtn" id="FILTER_BY_DIFFICULTY_BUTTON">Выбор по сложности</button>
-    </div>
-    <button class="dropbtn" onclick="update_params('DIFFICULTY', 'all'); update_params('GRADE', 'all'); update_params('CATEGORY', 'all');">Сбросить все фильтры</button>
-    <button class="dropbtn" id="classes_found"></button>
   </div>
-
-  <table id="finder_table">
-    <thead>
-      <tr>
-        <th>Источник</th>
-        <th>Тематика</th>
-        <th>Тема</th>
-        <th>Дата</th>
-        <th>Класс</th>
-        <th>Сложность</th>
-      </tr>
-    </thead>
-    <tbody><tr class="finder_item" _source="khamovniki" _cat="c" _grade="7" _diff="m" _link="1-raskraski" _topic="Разные раскраски" _date="22.9.2018" _num_probs="9" id="1"/><tr class="finder_item" _source="khamovniki" _cat="c" _grade="7" _diff="m" _link="11-trees" _topic="Деревья" _date="24.11.2018" _num_probs="9" id="10"/><tr class="finder_item" _source="khamovniki" _cat="c" _grade="7" _diff="m" _link="12-cshki" _topic="Комбинаторные доказательства" _date="15.12.2018" _num_probs="5" id="11"/><tr class="finder_item" _source="khamovniki" _cat="c" _grade="7" _diff="m" _link="2-kletochki" _topic="Клеточная оценка+пример" _date="29.9.2018" _num_probs="9" id="2"/><tr class="finder_item" _source="khamovniki" _cat="c" _grade="7" _diff="m" _link="3-graph" _topic="Считаем ребра в графах" _date="6.10.2018" _num_probs="9" id="3"/><tr class="finder_item" _source="khamovniki" _cat="c" _grade="7" _diff="h" _link="4-hard" _topic="Добавка к графам" _date="13.10.2018" _num_probs="3" id="4"/><tr class="finder_item" _source="khamovniki" _cat="n" _grade="7" _diff="m" _link="6-delimost" _topic="Делимость и остатки" _date="20.10.2018" _num_probs="6" id="5"/><tr class="finder_item" _source="khamovniki" _cat="n" _grade="7" _diff="m" _link="7-tch" _topic="Уравнения в целых числах" _date="27.10.2018" _num_probs="11" id="6"/><tr class="finder_item" _source="khamovniki" _cat="n" _grade="7" _diff="h" _link="8-extra" _topic="Уравнения в целых числах. Добавка" _date="3.11.2018" _num_probs="3" id="7"/><tr class="finder_item" _source="khamovniki" _cat="c" _grade="7" _diff="m" _link="9-infa" _topic="Информация и кодирование" _date="10.11.2018" _num_probs="7" id="8"/><tr class="finder_item" _source="khamovniki" _cat="c" _grade="7" _diff="h" _link="10-inf_extra" _topic="Информация и кодирование. Добавка" _date="17.11.2018" _num_probs="7" id="9"/>    
-    </tbody>
-  </table>
+  <div class="roundbox menu-box">
+    <div class="menu-list-container">
+      <ul class="menu-list main-menu-list">
+        <li class>
+          <a href="/MathForces/">ГОЛОВНА</a>
+        </li>
+        <li class>
+          <a href="/MathForces/contests/">ЗМАГАННЯ</a>
+        </li>
+        <li class="current">
+          <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/problemset/">АРХІВ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/groups/">ГРУПИ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/blogs/">БЛОГИ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br style="height: 3em; clear: both;">
+  <div style="position: relative;">
+    <div id="sidebar">
+      <div class="roundbox sidebox">
+        <div class="caption titled">
+          → Фільтр тренувань
+        </div>
+        <div id="gymContestsFilter" style="padding: 0.7em; border-radius: 5px 5px 0 0;">
+          <div class="dropdown" id="FILTER_BY_CATEGORY">
+            <button class="dropbtn" id="FILTER_BY_CATEGORY_BUTTON">Вибір за тематикою</button>
+          </div>
+          <div class="dropdown" id="FILTER_BY_GRADE">
+            <button class="dropbtn" id="FILTER_BY_GRADE_BUTTON">Вибір за класом</button>
+          </div>
+          <div class="dropdown" id="FILTER_BY_DIFFICULTY">
+            <button class="dropbtn" id="FILTER_BY_DIFFICULTY_BUTTON">Вибір за складністю</button>
+          </div>
+          <button class="dropbtn" onclick="update_params('DIFFICULTY', 'all'); update_params('GRADE', 'all'); update_params('CATEGORY', 'all');">Сбросить все фильтры</button>
+          <button class="dropbtn" id="classes_found"></button>  
+        </div>
+      </div>
+    </div>
+    <div id="pageContent" class="content-with-sidebar">
+      <div class="gymsList">
+        <div class="gyms-table">
+          <table id="gyms-table">
+            <thead>
+              <tr>
+                <th>Джерело</th>
+                <th>Тематика</th>
+                <th>Тема</th>
+                <th>Дата</th>
+                <th>Клас</th>
+                <th>Складність</th>
+              </tr>
+            </thead>
+            <tbody id="gyms-table-body">
+              <!--#include file="/MathForces/gyms/compiled_gyms_table.html" -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

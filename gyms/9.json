@@ -1,16 +1,13 @@
 {
-  "type": "training",
+  "type": "gym",
   "id": 9,
   "source": "Кружки в Хамовниках",
   "name": "Информация и кодирование. Добавка",
-  "grade": 7,
   "p_ids": [65, 66, 67],
-  "_source": "khamovniki",
   "_cat": "c",
   "_grade": 7,
   "_diff": "h",
-  "_link": "10-inf_extra",
-  "_topic": "Информация и кодирование. Добавка",
+  "pdf_link": "10-inf_extra",
   "_date": "17.11.2018",
   "_num_probs": 7
 }

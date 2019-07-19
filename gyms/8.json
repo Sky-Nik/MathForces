@@ -1,16 +1,13 @@
 {
-  "type": "training",
+  "type": "gym",
   "id": 8,
   "source": "Кружки в Хамовниках",
   "name": "Информация и кодирование",
-  "grade": 7,
   "p_ids": [58, 59, 60, 61, 62, 63, 64],
-  "_source": "khamovniki",
   "_cat": "c",
   "_grade": 7,
   "_diff": "m",
-  "_link": "9-infa",
-  "_topic": "Информация и кодирование",
+  "pdf_link": "khamovniki/7/9-infa",
   "_date": "10.11.2018",
   "_num_probs": 7
 }
