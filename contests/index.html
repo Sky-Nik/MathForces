@@ -1,29 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contests</title>
-    <meta charset="utf-8">
-    <base target="_blank">
-    <link rel="stylesheet" type="text/css" href="../sty.css">
+  <title>MathForces</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/MathForces/contests/index.css">
+  <script type="text/javascript" src="/MathForces/countdown.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
+  <div class="header">
+    <div class="logo">
+      <a href="/MathForces/">
+        <img src="/MathForces/img/logo-300x65.png">
+      </a>
+    </div>
+    <div class="right">
+      <div class="lang-chooser">
+        <a href="/MathForces/index_en.html">
+          <img src="/MathForces/img/gb.png" title="In English" alt="In English">
+        </a>
+        <!-- <a href="?locale=ru">
+          <img src="ru.png" title="По-русски" alt="По-русски">
+        </a> -->
+        <a href="index.html">
+          <img src="/MathForces/img/ua.png" title="Українською" alt="Українською">
+        </a>
+      </div>
+      <div class="login">
+        <a href="/MathForces/enter.html?back=%2f">Увійти</a>&ensp;|&ensp;<a href="/MathForces/register.html">Зареєструватися</a>
+      </div>
+    </div>
+  </div>
+  <div class="roundbox menu-box">
+    <div class="menu-list-container">
+      <ul class="menu-list main-menu-list">
+        <li class>
+          <a href="/MathForces/">ГОЛОВНА</a>
+        </li>
+        <li class="current">
+          <a href="/MathForces/contests/">ЗМАГАННЯ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/problemset/">АРХІВ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/groups/">ГРУПИ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/blogs/">БЛОГИ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br style="height: 3em; clear: both;">
+  <div style="position: relative;">
+    <div id="sidebar">
+      <div class="roundbox sidebox">
+        <div class="caption titled">
+          → Зверніть увагу
+        </div>
+        <div style="padding: 0.5em; border-radius: 5px 5px 0 0;">
+          <div class="before-contest">
+            <span class="contest-state-phase">До змагання</span>
+            <br>
+            <a href="/MathForces//contests/3">Онлайн олімпіада</a>
+            <br>
+            <span class="countdown" id="before-contest-countdown"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pageContent" class="content-with-sidebar">
+      <div class="contestList">
+        <div class="contests-table" style="margin-top:2em;">
+          <table>
+            <thead>
+              <tr>
                 <th>№</th>
-                <th>Название</th>
-                <th>Начало</th>
-                <th>Длительность</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="1_t.html">1</a></td>
-                <td><a href="1_t.html">Отборочная олимпиада</a></td>
-                <td>15.9.2018, 10:00</td>
-                <td>3:00</td>
-            </tr>    
-        </tbody>
-    </table>
+                <th>Назва</th>
+                <th>Початок</th>
+                <th>Тривалість</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr contest-id="1">
+                <td class="contest-number-column"><a href="/MathForces/contests/1_t.html">1</a></td>
+                <td class="contest-name-column"><a href="/MathForces/contests/1_t.html">Відбіркова олімпіада</a></td>
+                <td class="contest-start-time-column">15.09.2018<br>10:00</td>
+                <td class="contest-duration-column">3:00</td>
+              </tr>    
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
