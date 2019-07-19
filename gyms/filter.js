@@ -46,7 +46,7 @@ function update_params(param_type, param_value) {
   }
 
   // update gymitems
-  var elements = document.getElementsByClassName('gymitem');
+  var elements = document.getElementsByTagName('tr');
   alert('DEBUG: ' + elements.length);
   var k = 0; // matches counter
   for (var i = 0; i < elements.length; ++i) {
@@ -124,5 +124,5 @@ function compile_filters() {
   }
   document.getElementById("FILTER_BY_DIFFICULTY").innerHTML += '<div class="dropdown-content">' + s + '</div>';
 
-  document.getElementById("classes_found").textContent = "Занятий: " + document.getElementsByClassName("gymitem").length;
+  document.getElementById("classes_found").textContent = "Занятий: " + document.getElementsByTagName('tr').length;
 };
