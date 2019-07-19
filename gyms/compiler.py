@@ -34,7 +34,7 @@ if __name__ == '__main__':
                 <td class="gym-category">{LOCAL_CATEGORY_NAMES_UPPERCASE[gym['_cat']]}</td>
                 <td class="gym-topic">{gym['name']}: 
                   <a href="/MathForces/gyms/{gym['pdf_link']}.pdf">[pdf]</a>,
-                  <a href="v/MathForces/gyms/{gym['id']}_t">[web]</a>,
+                  <a href="/MathForces/gyms/{gym['id']}_t">[web]</a>,
                   <span style="color: gray; font-size: smaller;">{gym['_num_probs']}&nbsp;задач{'і' if 2 <= gym['_num_probs'] <= 4 else ''}</span></td>
                 <td class="gym-date">{gym['_date']}</td>
                 <td class="gym-grade">{gym['_grade']}</td>
