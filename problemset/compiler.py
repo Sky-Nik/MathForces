@@ -11,7 +11,7 @@ if __name__ == '__main__':
     compiled_problems_table += f'''              <tr class="problem-item">
                 <td class="problem-number"><a href="/MathForces/problemset/{problem['id']}">{problem['id']}</a></td>
                 <td class="problem-name"><a href="/MathForces/problemset/{problem['id']}">{problem['name']}</a></td>
-                <td class="problem-tags">{', '.join(problem['tags'])}</td>
+                <td class="problem-tags"><span class="filter-tag">{'</span>, <span class="filter-tag">'.join(problem['tags'])}</span></td>
                 <td class="problem-difficulty">{problem['difficulty']}</td>
               </tr>
 '''
