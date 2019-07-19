@@ -287,3 +287,11 @@ th, td {
 .gym-difficulty {
   text-align: center;
 }
+
+.footer {
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 1em;
+  clear: both;
+}

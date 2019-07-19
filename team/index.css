@@ -209,13 +209,11 @@ div.ttypography {
 }
 
 .footer {
-  margin-top: 1em;
   padding-top: 1em;
   border-top: 1px solid #ccc;
   text-align: center;
   font-size: 1em;
   clear: both;
-  height: 4em;
 }
 
 .imgrow {
