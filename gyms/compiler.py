@@ -29,7 +29,7 @@ if __name__ == '__main__':
   for file in filter(lambda _: os.path.splitext(_)[1] == '.json', os.listdir()):
     gym = json.loads(open(file, 'r', encoding='utf-8').read())
     assert gym['type'] == 'gym'
-    compiled_gyms_table += f'''              <tr сlass="gym_item" _cat="{gym['_cat']}" _grade="{gym['_grade']}" _diff="{gym['_diff']}" gym-id="{gym['id']}">
+    compiled_gyms_table += f'''              <tr сlass="gym_item" _cat="{gym['_cat']}" _grade="{gym['_grade']}" _diff="{gym['_diff']}">
                 <td class="gym-source">{gym['source']}</td>
                 <td class="gym-category">{LOCAL_CATEGORY_NAMES_UPPERCASE[gym['_cat']]}</td>
                 <td class="gym-topic">{gym['name']}: 
@@ -38,12 +38,12 @@ if __name__ == '__main__':
                   <span style="color: gray; font-size: smaller;">{gym['_num_probs']}&nbsp;задач{'і' if 2 <= gym['_num_probs'] <= 4 else ''}</span></td>
                 <td class="gym-date">{gym['_date']}</td>
                 <td class="gym-grade">{gym['_grade']}</td>
-                <td clas="gym-difficulty">{LOCAL_DIFFICULTY_NAMES_UPPERCASE[gym['_diff']]}</td>
+                <td class="gym-difficulty">{LOCAL_DIFFICULTY_NAMES_UPPERCASE[gym['_diff']]}</td>
               </tr>
 '''
   # update index:
   index_lines = open('index.html', 'r', encoding='utf-8').readlines()
-  table_body_start = index_lines.index('            <tbody id="gyms-table-body">\n')
+  table_body_start = index_lines.index('            <tbody id="gyms_table_body">\n')
   table_body_end = index_lines.index('            </tbody>\n')
   index_lines = index_lines[:table_body_start + 1] + [compiled_gyms_table, ] + index_lines[table_body_end:]
   open('index.html', 'w', encoding='utf-8').writelines(index_lines)

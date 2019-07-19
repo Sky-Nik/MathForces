@@ -46,7 +46,7 @@ function update_params(param_type, param_value) {
   }
 
   // update gym_items
-  var elements = document.getElementsByClassName("gym_item");
+  var elements = document.getElementsByClassName('gym_item');
   alert('DEBUG: ' + elements.length);
   var k = 0; // matches counter
   for (var i = 0; i < elements.length; ++i) {
@@ -124,5 +124,5 @@ function compile_filters() {
   }
   document.getElementById("FILTER_BY_DIFFICULTY").innerHTML += '<div class="dropdown-content">' + s + '</div>';
 
-  document.getElementById("classes_found").textContent = "Занятий: " + document.getElementsByClassName("gym_item").length;
+  document.getElementById("classes_found").textContent = "Занятий: " + document.getElementById('gyms-table-body').getElementsByClassName("content-with-sidebar gym_item").length;
 };
