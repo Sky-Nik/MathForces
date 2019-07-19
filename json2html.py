@@ -293,109 +293,25 @@ def generate_p_index():
     os.chdir('..')
 
 
-def generate_c_index():
+def all_c_json2html():
     import os
     os.chdir('contests')
-    index_html = '''<!DOCTYPE html>
-<html>
-<head>
-    <title>Contests</title>
-    <meta charset="utf-8">
-    <base target="_blank">
-    <link rel="stylesheet" type="text/css" href="../sty.css">
-</head>
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th>№</th>
-                <th>Название</th>
-                <th>Начало</th>
-                <th>Длительность</th>
-            </tr>
-        </thead>
-        <tbody>'''
-    
     for c_id in map(lambda _: _[:-5], filter(lambda _: _[-5:] == '.json', os.listdir())):
         c_json2html(c_id)
         c_json2html_t(c_id)
-        c = json.loads(open(f'{c_id}.json', 'r', encoding='utf-8').read())
-        index_html += f'''
-            <tr>
-                <td><a href="{c['id']}_t.html">{c['id']}</a></td>
-                <td><a href="{c['id']}_t.html">{c['name']}</a></td>
-                <td>{c['start_time']}</td>
-                <td>{c['duration']}</td>
-            </tr>'''
-
-    index_html += '''    
-        </tbody>
-    </table>
-</body>
-</html>'''
-
-    open(f'index.html', 'w', encoding='utf-8').write(index_html)
     os.chdir('..')
 
 
-def generate_t_index():
+def all_t_json2html():
     import os
     os.chdir('gyms')
-    index_html = '''<!DOCTYPE html>
-<html>
-<head>
-  <title>Trainings</title>
-  <meta charset="utf-8">
-  <base target="_blank">
-  <link rel="stylesheet" type="text/css" href="sty.css">
-  <script type="text/javascript" src="filter.js"></script>
-  <script type="text/javascript" src="compiler.js"></script>
-</head>
-<body onload="compile_filters();compile_finder_items();compile_classes_found();">
-  <div id="menu">
-    <div class="dropdown" id="FILTER_BY_CATEGORY">
-      <button class="dropbtn" id="FILTER_BY_CATEGORY_BUTTON">Выбор по тематике</button>
-    </div>
-    <div class="dropdown" id="FILTER_BY_GRADE">
-      <button class="dropbtn" id="FILTER_BY_GRADE_BUTTON">Выбор по классу</button>
-    </div>
-    <div class="dropdown" id="FILTER_BY_DIFFICULTY">
-      <button class="dropbtn" id="FILTER_BY_DIFFICULTY_BUTTON">Выбор по сложности</button>
-    </div>
-    <button class="dropbtn" onclick="update_params('DIFFICULTY', 'all'); update_params('GRADE', 'all'); update_params('CATEGORY', 'all');">Сбросить все фильтры</button>
-    <button class="dropbtn" id="classes_found"></button>
-  </div>
-
-  <table id="finder_table">
-    <thead>
-      <tr>
-        <th>Источник</th>
-        <th>Тематика</th>
-        <th>Тема</th>
-        <th>Дата</th>
-        <th>Класс</th>
-        <th>Сложность</th>
-      </tr>
-    </thead>
-    <tbody>'''
-    
     for t_id in map(lambda _: _[:-5], filter(lambda _: _[-5:] == '.json', os.listdir())):
         t_json2html(t_id)
         t_json2html_t(t_id)
-        t = json.loads(open(f'{t_id}.json', 'r', encoding='utf-8').read())
-        index_html += f"<tr class=\"finder_item\" _source=\"{t['_source']}\" _cat=\"{t['_cat']}\" _grade=\"{t['_grade']}\" _diff=\"{t['_diff']}\" _link=\"{t['_link']}\" _topic=\"{t['_topic']}\" _date=\"{t['_date']}\" _num_probs=\"{t['_num_probs']}\" id=\"{t['id']}\"/>"
-
-    index_html += '''    
-    </tbody>
-  </table>
-</body>
-</html>'''
-
-    open(f'index.html', 'w', encoding='utf-8').write(index_html)
     os.chdir('..')
 
 
 if __name__ == "__main__":
     generate_p_index()
-    generate_c_index()
-    generate_t_index()
+    all_c_json2html()
+    all_t_json2html()
