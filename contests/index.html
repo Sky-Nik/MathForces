@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="/MathForces/contests/index.css">
   <script type="text/javascript" src="/MathForces/countdown.js"></script>
+  <script type="text/javascript" src="/MathForces/contests/compiler.js"></script>
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 </head>
@@ -77,7 +78,7 @@
     <div id="pageContent" class="content-with-sidebar">
       <div class="contestList">
         <div class="contests-table">
-          <table>
+          <table id="contests-table">
             <thead>
               <tr>
                 <th>№</th>
@@ -87,12 +88,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr contest-id="1">
-                <td class="contest-number-column"><a href="/MathForces/contests/1_t.html">1</a></td>
-                <td class="contest-name-column"><a href="/MathForces/contests/1_t.html">Відбіркова олімпіада</a></td>
-                <td class="contest-start-time-column">15.09.2018<br>10:00</td>
-                <td class="contest-duration-column">03:00</td>
-              </tr>    
+              <!--#include file="/MathForces/contests/compiled_contests_table.html" -->
             </tbody>
           </table>
         </div>
