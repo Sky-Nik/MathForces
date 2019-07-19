@@ -104,7 +104,7 @@ div {
 
 #sidebar {
   float: right;
-  width: 20em;
+  width: 15em;
   display: inline;
   margin: 1em 1em 1em -22em;
 }
@@ -231,7 +231,7 @@ th {
 
 td {
   max-width: 350px;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 th, td {
