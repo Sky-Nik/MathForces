@@ -1,528 +1,614 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Problems</title>
-    <meta charset="utf-8">
-    <base target="_blank">
-    <link rel="stylesheet" type="text/css" href="../sty.css">
+  <title>Архів задач | MathForces</title>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" type="text/css" href="/MathForces/problemset/index.css"> -->
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
+  <div class="header">
+    <div class="logo">
+      <a href="/MathForces/">
+        <img src="/MathForces/img/logo-300x65.png">
+      </a>
+    </div>
+    <div class="right">
+      <div class="lang-chooser">
+        <a href="/MathForces/index_en.html">
+          <img src="/MathForces/img/gb.png" title="In English" alt="In English">
+        </a>
+        <!-- <a href="?locale=ru">
+          <img src="ru.png" title="По-русски" alt="По-русски">
+        </a> -->
+        <a href="index.html">
+          <img src="/MathForces/img/ua.png" title="Українською" alt="Українською">
+        </a>
+      </div>
+      <div class="login">
+        <a href="/MathForces/enter.html?back=%2f">Увійти</a>&ensp;|&ensp;<a href="/MathForces/register.html">Зареєструватися</a>
+      </div>
+    </div>
+  </div>
+  <div class="roundbox menu-box">
+    <div class="menu-list-container">
+      <ul class="menu-list main-menu-list">
+        <li class>
+          <a href="/MathForces/">ГОЛОВНА</a>
+        </li>
+        <li class>
+          <a href="/MathForces/contests/">ЗМАГАННЯ</a>
+        </li>
+        <li class="current">
+          <a href="/MathForces/problems/">ТРЕНУВАННЯ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/problemset/">АРХІВ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/groups/">ГРУПИ</a>
+        </li>
+        <li class>
+          <a href="/MathForces/blogs/">БЛОГИ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br style="height: 3em; clear: both;">
+  <div style="position: relative;">
+    <div id="sidebar">
+      <div class="roundbox sidebox">
+        <div class="caption titled">
+          → Зверніть увагу
+        </div>
+        <div style="padding: 0.5em; border-radius: 5px 5px 0 0;">
+          <div class="before-contest">
+            <span class="contest-state-phase">До змагання</span>
+            <br>
+            <a href="/MathForces/contests/3">Онлайн олімпіада</a>
+            <br>
+            <span class="countdown" id="before-contest-countdown"></span>
+          </div>
+        </div>
+      </div>
+      <div class="roundbox sidebox">
+        <div class="caption titled">
+          → Фільтр задач
+        </div>
+        <div id="problemFilter" style="padding: 0.25em; border-radius: 5px 5px 0 0;">
+          <button class="dropbtn" id="classes_found">Задач: </button>
+        </div>
+      </div>
+    </div>
+    <div id="pageContent" class="content-with-sidebar">
+      <div> <!-- class="problemsList"> -->
+        <div> <!-- class="problems-table"> -->
+          <table id="problems_table">
+            <thead>
+              <tr>
                 <th>№</th>
-                <th>Название</th>
+                <th>Назва</th>
                 <th>Теги</th>
-                <th>Сложность</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="1.html">1</a></td>
-                <td><a href="1.html">Игра с делителями</a></td>
-                <td class="problem_tags">number theory, combinatorics, games</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td><a href="10.html">10</a></td>
-                <td><a href="10.html">8&times;8 и странные доминошки</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1100</td>
-            </tr>
-            <tr>
-                <td><a href="11a.html">11a</a></td>
-                <td><a href="11a.html">Куб 3&times;3&times;3 без трех уголков</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1200</td>
-            </tr>
-            <tr>
-                <td><a href="11b.html">11b</a></td>
-                <td><a href="11b.html">Куб 5&times;5&times;5 без противоположных уголков</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1400</td>
-            </tr>
-            <tr>
-                <td><a href="12.html">12</a></td>
-                <td><a href="12.html">Перекрась квадрат!</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1300</td>
-            </tr>
-            <tr>
-                <td><a href="13.html">13</a></td>
-                <td><a href="13.html">Доску 8&times;8 таки разрезали</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1200</td>
-            </tr>
-            <tr>
-                <td><a href="14.html">14</a></td>
-                <td><a href="14.html">&laquo;Ну Барсик, ну ещё капельку&raquo;</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1500</td>
-            </tr>
-            <tr>
-                <td><a href="15.html">15</a></td>
-                <td><a href="15.html">Хорошие клетки в 11&times;11</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1400</td>
-            </tr>
-            <tr>
-                <td><a href="16.html">16</a></td>
-                <td><a href="16.html">Сотовая игра</a></td>
-                <td class="problem_tags">combinatorics, colorings, games</td>
-                <td>1700</td>
-            </tr>
-            <tr>
-                <td><a href="17.html">17</a></td>
-                <td><a href="17.html">Мирная шахматная сходка</a></td>
-                <td class="problem_tags">combinatorics, chessboard</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="18.html">18</a></td>
-                <td><a href="18.html">Почти кубик Рубика 2&times;2&times;2</a></td>
-                <td class="problem_tags">combinatorics</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="19.html">19</a></td>
-                <td><a href="19.html">Гепард гепарду друг</a></td>
-                <td class="problem_tags">combinatorics, board</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="2.html">2</a></td>
-                <td><a href="2.html">Сфинкс и три числа</a></td>
-                <td class="problem_tags">questions, combinatorics, games</td>
-                <td>1200</td>
-            </tr>
-            <tr>
-                <td><a href="20.html">20</a></td>
-                <td><a href="20.html">Ладьи бьют друг друга</a></td>
-                <td class="problem_tags">combinatorics, board</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="21.html">21</a></td>
-                <td><a href="21.html">Короли бьют всю доску</a></td>
-                <td class="problem_tags">combinatorics, chessboard</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="22.html">22</a></td>
-                <td><a href="22.html">Карлсон, Малыш, и квадратный торт</a></td>
-                <td class="problem_tags">combinatorics, games</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="23.html">23</a></td>
-                <td><a href="23.html">&laquo;Равномерное&raquo; распределение фишек</a></td>
-                <td class="problem_tags">combinatorics</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="24.html">24</a></td>
-                <td><a href="24.html">Черно-белые треугольники</a></td>
-                <td class="problem_tags">combinatorics, board</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="25.html">25</a></td>
-                <td><a href="25.html">Петя, Вася, и дорогая игра</a></td>
-                <td class="problem_tags">combinatorics, board, games</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="26.html">26</a></td>
-                <td><a href="26.html">Егор и Леша</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="27.html">27</a></td>
-                <td><a href="27.html">Только Т-образные перекрестки</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="28.html">28</a></td>
-                <td><a href="28.html">Кавелерийская дивизия №777</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="29.html">29</a></td>
-                <td><a href="29.html">Заходят эльф, гном, и хоббит в бар&hellip;</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="3.html">3</a></td>
-                <td><a href="3.html">Любопытные дроби</a></td>
-                <td class="problem_tags">number theory</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td><a href="30a.html">30a</a></td>
-                <td><a href="30a.html">Либо трое попарно знакомых, либо&hellip;</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="30b.html">30b</a></td>
-                <td><a href="30b.html">Либо четверо попарно знакомых, либо&hellip;</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="31.html">31</a></td>
-                <td><a href="31.html">В кругу друзей</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="32.html">32</a></td>
-                <td><a href="32.html">Скажи &laquo;нет&raquo; треугольникам!</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="33.html">33</a></td>
-                <td><a href="33.html">Максимум ребер без клик</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="34.html">34</a></td>
-                <td><a href="34.html">Ошибка статистика</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="35.html">35</a></td>
-                <td><a href="35.html">Чётное число общих знакомых</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="36.html">36</a></td>
-                <td><a href="36.html">Юный паяльщик</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="37.html">37</a></td>
-                <td><a href="37.html">Heil Hidra!</a></td>
-                <td class="problem_tags">combinatorics, graphs</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="38.html">38</a></td>
-                <td><a href="38.html">Раздели камни</a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="39.html">39</a></td>
-                <td><a href="39.html">Разбойники и мешок монет</a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="4.html">4</a></td>
-                <td><a href="4.html">О делимости сумм чисел на круге</a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td><a href="40.html">40</a></td>
-                <td><a href="40.html">Выдели число</a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="41.html">41</a></td>
-                <td><a href="41.html">Незнайка на Луне и сдача</a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="42.html">42</a></td>
-                <td><a href="42.html">Бесконечную ленту разрезали&hellip;</a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="43.html">43</a></td>
-                <td><a href="43.html">Магическая перетасовка</a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="44.html">44</a></td>
-                <td><a href="44.html">p<sup>q</sup> &plus; q<sup>p</sup></a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="45.html">45</a></td>
-                <td><a href="45.html">123456<sup>m</sup> и 1000<sup>m</sup></a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="46.html">46</a></td>
-                <td><a href="46.html">11, 111, 1111, &hellip; и квадраты</a></td>
-                <td class="problem_tags">number theory, divisibility</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="47.html">47</a></td>
-                <td><a href="47.html">p<sup>q</sup> &plus; q<sup>p</sup> (2)</a></td>
-                <td class="problem_tags">number theory, algebra</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="48.html">48</a></td>
-                <td><a href="48.html">a<sup>2</sup> &plus; 9ab &plus; b<sup>2</sup></a></td>
-                <td class="problem_tags">number theory, algebra</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="49.html">49</a></td>
-                <td><a href="49.html">x<sup>3</sup> &plus; 3xy(x + y) &plus; 2y<sup>3</sup></a></td>
-                <td class="problem_tags">number theory, algebra</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="5.html">5</a></td>
-                <td><a href="5.html">Разноцветные шарики</a></td>
-                <td class="problem_tags">combinatorics, binary</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td><a href="50.html">50</a></td>
-                <td><a href="50.html">x<sup>2</sup> &plus; y<sup>2</sup> &minus; 5xy &plus; 4</a></td>
-                <td class="problem_tags">number theory</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="51.html">51</a></td>
-                <td><a href="51.html">1<sup>n</sup> &plus; 2<sup>n</sup> + &hellip; &plus; n<sup>n</sup></a></td>
-                <td class="problem_tags">number theory</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="52.html">52</a></td>
-                <td><a href="52.html">3<sup>x</sup> &plus; 4<sup>y</sup> = 5<sup>z</sup></a></td>
-                <td class="problem_tags">number theory</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="53.html">53</a></td>
-                <td><a href="53.html">x<sup>8</sup> &plus; 2<sup>2<sup>x</sup>&plus;2</sup> = p</a></td>
-                <td class="problem_tags">number theory</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="54.html">54</a></td>
-                <td><a href="54.html">Два куба и квадрат</a></td>
-                <td class="problem_tags">number theory</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="55.html">55</a></td>
-                <td><a href="55.html">Факториалы</a></td>
-                <td class="problem_tags">number theory, factorial</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="56.html">56</a></td>
-                <td><a href="56.html">n<sup>3</sup> &plus; 2n<sup>2</sup> &plus; 11</a></td>
-                <td class="problem_tags">number theory, cubes</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="57.html">57</a></td>
-                <td><a href="57.html">Нет решений</a></td>
-                <td class="problem_tags">number theory</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="58.html">58</a></td>
-                <td><a href="58.html">Легкая фальшивка</a></td>
-                <td class="problem_tags">combinatorics, information, weighings</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="59.html">59</a></td>
-                <td><a href="59.html">Магазин &laquo;Одуванчик&raquo; и Клавдия Петровна</a></td>
-                <td class="problem_tags">combinatorics, information, questions</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="6.html">6</a></td>
-                <td><a href="6.html">Две фишки на полосе</a></td>
-                <td class="problem_tags">combinatorics, chessboard, graphs, bigraphs</td>
-                <td>1400</td>
-            </tr>
-            <tr>
-                <td><a href="60.html">60</a></td>
-                <td><a href="60.html">Золото, серебро, подделки</a></td>
-                <td class="problem_tags">combinatorics, information, weighings</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="61.html">61</a></td>
-                <td><a href="61.html">Две группы</a></td>
-                <td class="problem_tags">combinatorics, information</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="62.html">62</a></td>
-                <td><a href="62.html">11 мудрецов и тысяча цветов</a></td>
-                <td class="problem_tags">combinatorics, information</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="63.html">63</a></td>
-                <td><a href="63.html">Энакин и имена</a></td>
-                <td class="problem_tags">combinatorics, information, questions</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="64.html">64</a></td>
-                <td><a href="64.html">Лабораторные крысы и яд</a></td>
-                <td class="problem_tags">combinatorics, information, questions</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="65.html">65</a></td>
-                <td><a href="65.html">Язык племени АУ</a></td>
-                <td class="problem_tags">combinatorics, information, words</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="66.html">66</a></td>
-                <td><a href="66.html">Гоблинские банды</a></td>
-                <td class="problem_tags">combinatorics, sets</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="67.html">67</a></td>
-                <td><a href="67.html">Попугай-обманщик и сокровища</a></td>
-                <td class="problem_tags">combinatorics, questions</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="68.html">68</a></td>
-                <td><a href="68.html">Остов есть? А если найду?</a></td>
-                <td class="problem_tags">combinatorics, graphs, trees</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="69.html">69</a></td>
-                <td><a href="69.html">Остов остову рознь</a></td>
-                <td class="problem_tags">combinatorics, graphs, trees</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="7.html">7</a></td>
-                <td><a href="7.html">Аня и ряд из чисел</a></td>
-                <td class="problem_tags">number theory, Stern–Brocot tree, Euler phi function</td>
-                <td>1700</td>
-            </tr>
-            <tr>
-                <td><a href="70.html">70</a></td>
-                <td><a href="70.html">Удали вершину</a></td>
-                <td class="problem_tags">combinatorics, graphs, trees</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="71.html">71</a></td>
-                <td><a href="71.html">Браконьер и инспектор полиции</a></td>
-                <td class="problem_tags">combinatorics, graphs, trees</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="72.html">72</a></td>
-                <td><a href="72.html">Вассалы, сюзерены, и бароны</a></td>
-                <td class="problem_tags">combinatorics, graphs, trees</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="73.html">73</a></td>
-                <td><a href="73.html">Три авиакомпании</a></td>
-                <td class="problem_tags">combinatorics, graphs, trees</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="74.html">74</a></td>
-                <td><a href="74.html">Экономим на циклах</a></td>
-                <td class="problem_tags">combinatorics, graphs, trees, cycles</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="75.html">75</a></td>
-                <td><a href="75.html">Открой 50, закрой одну</a></td>
-                <td class="problem_tags">combinatorics, graphs, trees</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="76.html">76</a></td>
-                <td><a href="76.html">Прокати кубик</a></td>
-                <td class="problem_tags">combinatorics, graphs, trees</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="77.html">77</a></td>
-                <td><a href="77.html">Сумма цешек</a></td>
-                <td class="problem_tags">combinatorics, binomial coefficients</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="78.html">78</a></td>
-                <td><a href="78.html">Произведение цешек</a></td>
-                <td class="problem_tags">combinatorics, binomial coefficients</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="79.html">79</a></td>
-                <td><a href="79.html">Взвешенные суммы цешек</a></td>
-                <td class="problem_tags">combinatorics, binomial coefficients</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="80.html">80</a></td>
-                <td><a href="80.html">Цешка &mdash; многочлен</a></td>
-                <td class="problem_tags">combinatorics, binomial coefficients</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="81.html">81</a></td>
-                <td><a href="81.html">Суммы цешек (2)</a></td>
-                <td class="problem_tags">combinatorics, binomial coefficients</td>
-                <td>??</td>
-            </tr>
-            <tr>
-                <td><a href="8a.html">8a</a></td>
-                <td><a href="8a.html">8&times;8 на 1&times;3</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td><a href="8b.html">8b</a></td>
-                <td><a href="8b.html">10&times;10 на 1&times;4</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td><a href="9.html">9</a></td>
-                <td><a href="9.html">10&times;10 на Т-тетраминошки</a></td>
-                <td class="problem_tags">combinatorics, colorings</td>
-                <td>1200</td>
-            </tr>    
-        </tbody>
-    </table>
+                <th>Складність</th>
+              </tr>
+            </thead>
+            <tbody id="problems_table_body">
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/1">1</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/1">Игра с делителями</a></td>
+                <td class="problem-tags">number theory, combinatorics, games</td>
+                <td class="problem-difficulty">1000</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/10">10</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/10">8&times;8 и странные доминошки</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1100</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/11a">11a</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/11a">Куб 3&times;3&times;3 без трех уголков</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1200</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/11b">11b</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/11b">Куб 5&times;5&times;5 без противоположных уголков</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1400</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/12">12</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/12">Перекрась квадрат!</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1300</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/13">13</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/13">Доску 8&times;8 таки разрезали</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1200</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/14">14</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/14">&laquo;Ну Барсик, ну ещё капельку&raquo;</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1500</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/15">15</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/15">Хорошие клетки в 11&times;11</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1400</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/16">16</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/16">Сотовая игра</a></td>
+                <td class="problem-tags">combinatorics, colorings, games</td>
+                <td class="problem-difficulty">1700</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/17">17</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/17">Мирная шахматная сходка</a></td>
+                <td class="problem-tags">combinatorics, chessboard</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/18">18</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/18">Почти кубик Рубика 2&times;2&times;2</a></td>
+                <td class="problem-tags">combinatorics</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/19">19</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/19">Гепард гепарду друг</a></td>
+                <td class="problem-tags">combinatorics, board</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/2">2</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/2">Сфинкс и три числа</a></td>
+                <td class="problem-tags">questions, combinatorics, games</td>
+                <td class="problem-difficulty">1200</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/20">20</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/20">Ладьи бьют друг друга</a></td>
+                <td class="problem-tags">combinatorics, board</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/21">21</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/21">Короли бьют всю доску</a></td>
+                <td class="problem-tags">combinatorics, chessboard</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/22">22</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/22">Карлсон, Малыш, и квадратный торт</a></td>
+                <td class="problem-tags">combinatorics, games</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/23">23</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/23">&laquo;Равномерное&raquo; распределение фишек</a></td>
+                <td class="problem-tags">combinatorics</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/24">24</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/24">Черно-белые треугольники</a></td>
+                <td class="problem-tags">combinatorics, board</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/25">25</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/25">Петя, Вася, и дорогая игра</a></td>
+                <td class="problem-tags">combinatorics, board, games</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/26">26</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/26">Егор и Леша</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/27">27</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/27">Только Т-образные перекрестки</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/28">28</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/28">Кавелерийская дивизия №777</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/29">29</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/29">Заходят эльф, гном, и хоббит в бар&hellip;</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/3">3</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/3">Любопытные дроби</a></td>
+                <td class="problem-tags">number theory</td>
+                <td class="problem-difficulty">1000</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/30a">30a</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/30a">Либо трое попарно знакомых, либо&hellip;</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/30b">30b</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/30b">Либо четверо попарно знакомых, либо&hellip;</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/31">31</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/31">В кругу друзей</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/32">32</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/32">Скажи &laquo;нет&raquo; треугольникам!</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/33">33</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/33">Максимум ребер без клик</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/34">34</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/34">Ошибка статистика</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/35">35</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/35">Чётное число общих знакомых</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/36">36</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/36">Юный паяльщик</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/37">37</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/37">Heil Hidra!</a></td>
+                <td class="problem-tags">combinatorics, graphs</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/38">38</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/38">Раздели камни</a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/39">39</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/39">Разбойники и мешок монет</a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/4">4</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/4">О делимости сумм чисел на круге</a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">1000</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/40">40</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/40">Выдели число</a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/41">41</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/41">Незнайка на Луне и сдача</a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/42">42</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/42">Бесконечную ленту разрезали&hellip;</a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/43">43</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/43">Магическая перетасовка</a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/44">44</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/44">p<sup>q</sup> &plus; q<sup>p</sup></a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/45">45</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/45">123456<sup>m</sup> и 1000<sup>m</sup></a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/46">46</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/46">11, 111, 1111, &hellip; и квадраты</a></td>
+                <td class="problem-tags">number theory, divisibility</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/47">47</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/47">p<sup>q</sup> &plus; q<sup>p</sup> (2)</a></td>
+                <td class="problem-tags">number theory, algebra</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/48">48</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/48">a<sup>2</sup> &plus; 9ab &plus; b<sup>2</sup></a></td>
+                <td class="problem-tags">number theory, algebra</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/49">49</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/49">x<sup>3</sup> &plus; 3xy(x + y) &plus; 2y<sup>3</sup></a></td>
+                <td class="problem-tags">number theory, algebra</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/5">5</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/5">Разноцветные шарики</a></td>
+                <td class="problem-tags">combinatorics, binary</td>
+                <td class="problem-difficulty">1000</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/50">50</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/50">x<sup>2</sup> &plus; y<sup>2</sup> &minus; 5xy &plus; 4</a></td>
+                <td class="problem-tags">number theory</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/51">51</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/51">1<sup>n</sup> &plus; 2<sup>n</sup> + &hellip; &plus; n<sup>n</sup></a></td>
+                <td class="problem-tags">number theory</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/52">52</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/52">3<sup>x</sup> &plus; 4<sup>y</sup> = 5<sup>z</sup></a></td>
+                <td class="problem-tags">number theory</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/53">53</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/53">x<sup>8</sup> &plus; 2<sup>2<sup>x</sup>&plus;2</sup> = p</a></td>
+                <td class="problem-tags">number theory</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/54">54</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/54">Два куба и квадрат</a></td>
+                <td class="problem-tags">number theory</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/55">55</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/55">Факториалы</a></td>
+                <td class="problem-tags">number theory, factorial</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/56">56</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/56">n<sup>3</sup> &plus; 2n<sup>2</sup> &plus; 11</a></td>
+                <td class="problem-tags">number theory, cubes</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/57">57</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/57">Нет решений</a></td>
+                <td class="problem-tags">number theory</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/58">58</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/58">Легкая фальшивка</a></td>
+                <td class="problem-tags">combinatorics, information, weighings</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/59">59</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/59">Магазин &laquo;Одуванчик&raquo; и Клавдия Петровна</a></td>
+                <td class="problem-tags">combinatorics, information, questions</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/6">6</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/6">Две фишки на полосе</a></td>
+                <td class="problem-tags">combinatorics, chessboard, graphs, bigraphs</td>
+                <td class="problem-difficulty">1400</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/60">60</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/60">Золото, серебро, подделки</a></td>
+                <td class="problem-tags">combinatorics, information, weighings</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/61">61</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/61">Две группы</a></td>
+                <td class="problem-tags">combinatorics, information</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/62">62</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/62">11 мудрецов и тысяча цветов</a></td>
+                <td class="problem-tags">combinatorics, information</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/63">63</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/63">Энакин и имена</a></td>
+                <td class="problem-tags">combinatorics, information, questions</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/64">64</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/64">Лабораторные крысы и яд</a></td>
+                <td class="problem-tags">combinatorics, information, questions</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/65">65</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/65">Язык племени АУ</a></td>
+                <td class="problem-tags">combinatorics, information, words</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/66">66</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/66">Гоблинские банды</a></td>
+                <td class="problem-tags">combinatorics, sets</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/67">67</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/67">Попугай-обманщик и сокровища</a></td>
+                <td class="problem-tags">combinatorics, questions</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/68">68</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/68">Остов есть? А если найду?</a></td>
+                <td class="problem-tags">combinatorics, graphs, trees</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/69">69</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/69">Остов остову рознь</a></td>
+                <td class="problem-tags">combinatorics, graphs, trees</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/7">7</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/7">Аня и ряд из чисел</a></td>
+                <td class="problem-tags">number theory, Stern–Brocot tree, Euler phi function</td>
+                <td class="problem-difficulty">1700</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/70">70</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/70">Удали вершину</a></td>
+                <td class="problem-tags">combinatorics, graphs, trees</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/71">71</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/71">Браконьер и инспектор полиции</a></td>
+                <td class="problem-tags">combinatorics, graphs, trees</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/72">72</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/72">Вассалы, сюзерены, и бароны</a></td>
+                <td class="problem-tags">combinatorics, graphs, trees</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/73">73</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/73">Три авиакомпании</a></td>
+                <td class="problem-tags">combinatorics, graphs, trees</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/74">74</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/74">Экономим на циклах</a></td>
+                <td class="problem-tags">combinatorics, graphs, trees, cycles</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/75">75</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/75">Открой 50, закрой одну</a></td>
+                <td class="problem-tags">combinatorics, graphs, trees</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/76">76</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/76">Прокати кубик</a></td>
+                <td class="problem-tags">combinatorics, graphs, trees</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/77">77</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/77">Сумма цешек</a></td>
+                <td class="problem-tags">combinatorics, binomial coefficients</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/78">78</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/78">Произведение цешек</a></td>
+                <td class="problem-tags">combinatorics, binomial coefficients</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/79">79</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/79">Взвешенные суммы цешек</a></td>
+                <td class="problem-tags">combinatorics, binomial coefficients</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/80">80</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/80">Цешка &mdash; многочлен</a></td>
+                <td class="problem-tags">combinatorics, binomial coefficients</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/81">81</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/81">Суммы цешек (2)</a></td>
+                <td class="problem-tags">combinatorics, binomial coefficients</td>
+                <td class="problem-difficulty">??</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/8a">8a</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/8a">8&times;8 на 1&times;3</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1000</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/8b">8b</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/8b">10&times;10 на 1&times;4</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1000</td>
+              </tr>
+              <tr class="problem-item">
+                <td class="problem-number"><a href="/MathForces/problemset/9">9</a></td>
+                <td class="problem-name"><a href="/MathForces/problemset/9">10&times;10 на Т-тетраминошки</a></td>
+                <td class="problem-tags">combinatorics, colorings</td>
+                <td class="problem-difficulty">1200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br style="height: 3em; clear: both;">
+  <div class="footer">
+    MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a>
+  </div>
 </body>
 </html>
