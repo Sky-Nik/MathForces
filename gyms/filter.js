@@ -123,4 +123,6 @@ function compile_filters() {
     s += '<p onclick="update_params(\'DIFFICULTY\', \'' + key + '\');">' + LOCAL_DIFFICULTY_NAMES_UPPERCASE[key] + '</p>';
   }
   document.getElementById("FILTER_BY_DIFFICULTY").innerHTML += '<div class="dropdown-content">' + s + '</div>';
+
+  document.getElementById("classes_found").textContent = "Занятий: " + document.getElementsByClassName("finder_item").length;
 };
