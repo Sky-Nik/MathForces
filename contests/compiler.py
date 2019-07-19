@@ -15,3 +15,5 @@ if __name__ == '__main__':
                 <td class="contest-duration-column">{contest['duration'].zfill(5)}</td>
               </tr>'''
   open('compiled_contests_table.html', 'w', encoding='utf-8').write(compiled_contests_table)
+  # autoupdate contets table on GitHub Pages:
+  os.system('git add . && git commit -m "Recompiled contests table" && git push')
