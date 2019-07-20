@@ -65,6 +65,8 @@ def gym_json2html(gym_id):
 
   gym_html += f'''
   </div>
+  <br style="height: 3em; clear: both;">
+  <footer>MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a></footer>
 </body>
 </html>'''
 

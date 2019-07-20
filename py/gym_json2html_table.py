@@ -79,6 +79,8 @@ def gym_json2html_table(gym_id):
       </table
     </div>
   </div>
+  <br style="height: 3em; clear: both;">
+  <footer>MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a></footer>
 </body>
 </html>'''
     
