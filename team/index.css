@@ -1,9 +1,9 @@
-body header div.right {
+.right {
   float: right;
   text-align: right;
 }
 
-body header div.right div.login {
+.login {
   font-family: "verdana", "arial", sans-serif;
 }
 
@@ -21,7 +21,7 @@ body header {
   position: relative;
 }
 
-body header div.logo {
+.logo {
   float: left;
 }
 
