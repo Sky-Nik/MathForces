@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  transition: .5s ease;
+}
+
+.middle-bottom {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: -3em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.8;
+}
+
+.container:hover .middle-bottom {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  min-width: 15em;
+  font-size: large;
+  padding: 1em;
+}

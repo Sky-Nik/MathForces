@@ -3,14 +3,15 @@
 <head>
   <title>MathForces</title>
   <meta charset="utf-8">
-  <!-- <link rel="stylesheet" type="text/css" href="/MathForces/team/index.css"> -->
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="/MathForces/css/photo-table.css">
+  <link rel="stylesheet" type="text/css" href="/MathForces/css/image-overlay-opacity.css">
   <script type="text/javascript" src="/MathForces/countdown.js"></script>
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 </head>
 <body>
-  <div class="header">
+  <header>
     <div class="logo">
       <a href="/MathForces/">
         <img src="/MathForces/img/logo-300x65.png">
@@ -32,65 +33,91 @@
         <a href="/MathForces/enter.html?back=%2f">Увійти</a>&ensp;|&ensp;<a href="/MathForces/register.html">Зареєструватися</a>
       </div>
     </div>
-  </div>
-  <div class="roundbox menu-box">
-    <div class="menu-list-container">
-      <ul class="menu-list main-menu-list">
-        <li class>
-          <a href="/MathForces/">ГОЛОВНА</a>
-        </li>
-        <li class>
-          <a href="/MathForces/contests/">ЗМАГАННЯ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/problemset/">АРХІВ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/groups/">ГРУПИ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/blogs/">БЛОГИ</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  </header>
+  <nav class="roundbox">
+    <ul class="menu-list main-menu-list">
+      <li class>
+        <a href="/MathForces/">ГОЛОВНА</a>
+      </li>
+      <li class>
+        <a href="/MathForces/contests/">ЗМАГАННЯ</a>
+      </li>
+      <li class>
+        <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
+      </li>
+      <li class>
+        <a href="/MathForces/problemset/">АРХІВ</a>
+      </li>
+      <li class>
+        <a href="/MathForces/groups/">ГРУПИ</a>
+      </li>
+      <li class>
+        <a href="/MathForces/blogs/">БЛОГИ</a>
+      </li>
+    </ul>
+  </nav>
   <br style="height: 3em; clear: both;">
   <div style="position: relative;">
     <div id="pageContent">
-      <div class="imgrow"> 
-        <div class="ioo-container">
-          <img src="oles.golembovskyi.png" alt="Олесь Голембовський" class="ioo-image" style="width:100%">
-          <div class="ioo-middle">
-            <div class="ioo-text">Олесь Голембовський<br>Ідейний натхненник проекту<br>&nbsp;</div>
-          </div>
-        </div>
-        <div class="ioo-container">
-          <img src="nikita.skybytskyi.png" alt="Нікіта Скибицький" class="ioo-image" style="width:100%">
-          <div class="ioo-middle">
-            <div class="ioo-text">Нікіта Скибицький<br>Верстає задачі і фронтенд<br>Срібло IMO'16 і IMC'17</div>
-          </div>
-        </div>
-        <div class="ioo-container">
-          <img src="kateryna.gorokh.png" alt="Катерина Горох" class="ioo-image" style="width:100%">
-          <div class="ioo-middle">
-            <div class="ioo-text">Катерина Горох<br>Ідейна натхненниця проекту<br>Золото EGMO'19</div>
-          </div>
-        </div>
-        <div class="ioo-container">
-          <img src="vladyslav.bochok.png" alt="Владислав Бочок" class="ioo-image" style="width:100%">
-          <div class="ioo-middle">
-            <div class="ioo-text">Владислав Бочок<br>Бекенд-розробник<br>&nbsp;</div>
-          </div>
-        </div>
-      </div>
+      <table class="photo-table">
+        <tr class="photo-table-row">
+          <td class="photo-table-cell">
+            <div class="container" style="background-color: black;">
+              <img src="oles.golembovskyi.png" alt="Олесь Голембовський" style="width:100%" class="photo-table-photo image">
+              <div class="middle-bottom">
+                <div class="text">
+                  Олесь Голембовський<br>
+                  Ідейний натхненник проекту<br>
+                  Бронза IMO'19
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="photo-table-cell">
+            <div class="container" style="background-color: red;">
+              <img src="nikita.skybytskyi.png" alt="Нікіта Скибицький" style="width:100%" class="photo-table-photo image">
+              <div class="middle-bottom">
+                <div class="text">
+                  Нікіта Скибицький<br>
+                  Верстає задачі і фронтенд<br>
+                  Срібло IMO'16 і IMC'17
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr class="photo-table-row">
+          <td class="photo-table-cell">
+            <div class="container" style="background-color: blue;">
+              <img src="kateryna.gorokh.png" alt="Катерина Горох" style="width:100%" class="photo-table-photo image">
+              <div class="middle-bottom">
+                <div class="text">
+                  Катерина Горох<br>
+                  Ідейна натхненниця проекту<br>
+                  Золото EGMO'19
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="photo-table-cell">
+            <div class="container" style="background-color: black;">
+              <img src="vladyslav.bochok.png" alt="Владислав Бочок" style="width:100%" class="photo-table-photo image">
+              <div class="middle-bottom">
+                <div class="text">
+                  &nbsp;<br>
+                  Владислав Бочок<br>
+                  Бекенд-розробник
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
   <br style="height: 3em; clear: both;">
-  <div class="footer">
+  <footer>
     MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a>
-  </div>
+  </footer>
 </body>
 </html>

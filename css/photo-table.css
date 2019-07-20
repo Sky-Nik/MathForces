@@ -1,0 +1,17 @@
+.photo-table {
+  border-collapse: collapse;
+}
+
+.photo-table-row {
+  
+}
+
+.photo-table-cell {
+  border: 1em solid white;
+}
+
+.photo-table-photo {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}

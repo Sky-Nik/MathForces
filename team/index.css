@@ -1,9 +1,9 @@
-body div.header div.right {
+body header div.right {
   float: right;
   text-align: right;
 }
 
-body div.header div.right div.login {
+body header div.right div.login {
   font-family: "verdana", "arial", sans-serif;
 }
 
@@ -15,13 +15,13 @@ body {
   margin: 0 auto;
 }
 
-body div.header {
+body header {
   height: 5em;
   margin: 0 1em;
   position: relative;
 }
 
-body div.header div.logo {
+body header div.logo {
   float: left;
 }
 
@@ -40,7 +40,7 @@ html {
   background-color: white;
 }
 
-.menu-box {
+nav {
   margin: 0 1em;
   padding-top: 0.5em;
   height: 2.5em;
@@ -78,10 +78,6 @@ li {
 
 div {
   padding: 0;
-}
-
-.menu-list-container {
-  margin: 0;
 }
 
 .menu-list li a {
@@ -181,6 +177,7 @@ a:link {
   color: rgb(34, 177, 76) !important;
   text-decoration: none;
 }
+
 .topic .title * {
   font-size: 3rem !important;
   color: rgb(34, 177, 76) !important;
@@ -208,69 +205,10 @@ div.ttypography {
   /* background-color: #ffffff; */
 }
 
-.footer {
+footer {
   padding-top: 1em;
   border-top: 1px solid #ccc;
   text-align: center;
   font-size: 1em;
   clear: both;
-}
-
-.imgrow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create two equal columns that sits next to each other */
-.imgcol {
-  flex: 50%;
-  padding: 0 1em;
-}
-
-.imgcol img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-.ioo-container {
-  position: relative;
-  width: 45%;
-  margin: 1em;
-}
-
-.ioo-image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.ioo-middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  bottom: -4em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  width: 25em;
-}
-
-.ioo-container:hover .ioo-image {
-  opacity: 0.85;
-}
-
-.ioo-container:hover .ioo-middle {
-  opacity: 1;
-}
-
-.ioo-text {
-  /*background-color: #4CAF50;*/
-  color: white;
-  font-size: 2rem;
-  padding: 16px 32px;
 }
