@@ -2,7 +2,10 @@
 import os
 import json
 
-if __name__ == '__main__':
+
+def compile_contests_table():
+  """ supposed to run from /py directory """
+  os.chdir('../contests')
   compiled_contests_table = ""
   for file in filter(lambda _: os.path.splitext(_)[1] == '.json', os.listdir()):
     contest = json.loads(open(file, 'r', encoding='utf-8').read())
@@ -22,3 +25,7 @@ if __name__ == '__main__':
   open('index.html', 'w', encoding='utf-8').writelines(index_lines)
   # autoupdate contets table on GitHub Pages:
   os.system('git add . && git commit -m "Recompiled contests table" && git push')
+  os.chdri('../py')
+
+if __name__ == '__main__':
+  compile_contests_table()
