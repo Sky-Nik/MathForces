@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import os
-import json
 from contest_json2html import contest_json2html
 from contest_json2html_table import contest_json2html_table
 from problems2contest_tex import problems2contest_tex

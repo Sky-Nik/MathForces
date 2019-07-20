@@ -1,0 +1,127 @@
+table {
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+  font-size: 1.75rem;
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+}
+
+td {
+  max-width: 350px;
+  font-size: 1.5rem;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: .25em;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  width: 12em;
+  margin: .25em;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.problem-tags {
+  font-size: smaller;
+  color: silver;
+}
+
+.problem-number {
+  text-align: center;
+}
+
+.problem-difficulty {
+  text-align: center;
+}
+
+.footer {
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 1em;
+  clear: both;
+}
+
+p.problem_body {
+  padding: 15px;
+  background-color: #f2f2f2;
+  font-size: 1em;
+}
+
+h1.problem_head {
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 150%;
+}
+
+div.submit_problem button.submit_problem_button {
+  margin-left: auto;
+  margin-right: 0;
+  display: block; 
+}
+
+button.submit_problem_button {
+  background-color: white; 
+  border-radius: 18px;
+  border-color: #4CAF50;
+  border-width: 3px;
+  padding: 9px;
+}
+
+.submit_problem_button_inline_odd {
+  background: white url("/MathForces/img/submit-22x22.png") no-repeat right top;
+  border-radius: 0px;
+  border-width: 0px;
+  padding: 11px;
+}
+
+.submit_problem_button_inline_even {
+  background: #f2f2f2 url("/MathForces/img/submit-22x22.png") no-repeat right top;
+  border-radius: 0px;
+  border-width: 0px;
+  padding: 11px;
+}

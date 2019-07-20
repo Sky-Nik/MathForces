@@ -2,74 +2,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
   <title>Задача №12: Перекрась квадрат! | MathForces</title>
-  <!-- <link rel="stylesheet" type="text/css" href="/MathForces/problemset/index.css"> -->
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/MathForces/css/index.css">
+  <link rel="stylesheet" type="text/css" href="/MathForces/css/problemset.css">
+  <script type="text/javascript" src="/MathForces/js/countdown.js"></script>
+  <script type="text/javascript" src="/MathForces/js/convertDates.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 </head>
-<body onload="compile_filters();">
-  <div class="header">
-    <div class="logo">
-      <a href="/MathForces/">
-        <img src="/MathForces/img/logo-300x65.png">
-      </a>
-    </div>
+<body onload="convertDates();">
+  <header>
+    <div class="logo"><a href="/MathForces/"><img src="/MathForces/img/logo-300x65.png"></a></div>
     <div class="right">
       <div class="lang-chooser">
-        <a href="/MathForces/index_en.html">
-          <img src="/MathForces/img/gb.png" title="In English" alt="In English">
-        </a>
-        <!-- <a href="?locale=ru">
-          <img src="ru.png" title="По-русски" alt="По-русски">
-        </a> -->
-        <a href="index.html">
-          <img src="/MathForces/img/ua.png" title="Українською" alt="Українською">
-        </a>
+        <a href="/index_en.html"><img src="/MathForces/img/gb.png" title="In English" alt="In English"></a>
+        <!-- <a href="?locale=ru"><img src="ru.png" title="По-русски" alt="По-русски"></a> -->
+        <a href="index.html"><img src="/MathForces/img/ua.png" title="Українською" alt="Українською"></a>
       </div>
       <div class="login">
         <a href="/MathForces/enter.html?back=%2f">Увійти</a>&ensp;|&ensp;<a href="/MathForces/register.html">Зареєструватися</a>
       </div>
     </div>
-  </div>
-  <div class="roundbox menu-box">
-    <div class="menu-list-container">
-      <ul class="menu-list main-menu-list">
-        <li class>
-          <a href="/MathForces/">ГОЛОВНА</a>
-        </li>
-        <li class>
-          <a href="/MathForces/contests/">ЗМАГАННЯ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
-        </li>
-        <li class="current">
-          <a href="/MathForces/problemset/">АРХІВ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/groups/">ГРУПИ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/blogs/">БЛОГИ</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  </header>
+  <nav class="roundbox">
+    <ul class="menu-list main-menu-list">
+      <li class><a href="/MathForces/">ГОЛОВНА</a></li>
+      <li class><a href="/MathForces/contests/">ЗМАГАННЯ</a></li>
+      <li class><a href="/MathForces/gyms/">ТРЕНУВАННЯ</a></li>
+      <li class="current"><a href="/MathForces/problemset/">АРХІВ</a></li>
+      <li class><a href="/MathForces/groups/">ГРУПИ</a></li>
+      <li class><a href="/MathForces/blogs/">БЛОГИ</a></li>
+      <li class><a href="/MathForces/team/">КОМАНДА</a></li>
+    </ul>
+  </nav>
   <br style="height: 3em; clear: both;">
   <div style="position: relative;">
     <div id="pageContent">
-        <div class="ttypography">
-            <div class="problem">
-                <h1 class="problem_head">Задача №12: Перекрась квадрат!</h1>
-                <p class="problem_body">Квадрат \(8 \times 8\) клеток выкрашен в белый цвет. Разрешается выбрать в нём любой прямоугольник из трёх клеток и перекрасить их все в противоположный цвет (белые в чёрный, чёрные &mdash; в белый). Удастся ли несколькими такими операциями перекрасить весь квадрат в чёрный цвет?</p>
-                <div class="submit_problem">
-                    <button class="submit_problem_button" onlick="submit_problem('12');">Отослать!</button>
-                </div>
-            </div>
+      <div class="ttypography">
+        <div class="problem">
+          <h1 class="problem_head">Задача №12: Перекрась квадрат!</h1>
+          <p class="problem_body">Квадрат \(8 \times 8\) клеток выкрашен в белый цвет. Разрешается выбрать в нём любой прямоугольник из трёх клеток и перекрасить их все в противоположный цвет (белые в чёрный, чёрные &mdash; в белый). Удастся ли несколькими такими операциями перекрасить весь квадрат в чёрный цвет?</p>
+          <div class="submit_problem">
+            <button class="submit_problem_button" onlick="submit_problem('12');">Отослать!</button>
+          </div>
         </div>
+      </div>
     </div>
+  <br style="height: 3em; clear: both;">
+  <footer>MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a></footer>
 </body>
 </html>

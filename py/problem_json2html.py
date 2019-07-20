@@ -1,8 +1,17 @@
+#!/usr/bin/env python
+import json
+from problem_tex2html import problem_tex2html 
 
+
+def problem_json2html(problem_id):
+  """ supposed to run from /problemset directory """
+  problem = json.loads(open(f'{problem_id}.json', 'r', encoding='utf-8').read())
+  assert problem['type'] == 'problem'
+  open(f"{problem['id']}.html", 'w', encoding='utf-8').write(f'''
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Задача №11a: Куб 3&times;3&times;3 без трех уголков | MathForces</title>
+  <title>Задача №{problem['id']}: {problem['name']} | MathForces</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="/MathForces/css/index.css">
   <link rel="stylesheet" type="text/css" href="/MathForces/css/problemset.css">
@@ -40,10 +49,10 @@
     <div id="pageContent">
       <div class="ttypography">
         <div class="problem">
-          <h1 class="problem_head">Задача №11a: Куб 3&times;3&times;3 без трех уголков</h1>
-          <p class="problem_body">Можно ли куб \(3 \times 3 \times 3\), у которого вырезаны три угловых кубика, разбить на параллелепипеды \(1 \times 1 \times 2\)?</p>
+          <h1 class="problem_head">Задача №{problem['id']}: {problem['name']}</h1>
+          <p class="problem_body">{problem_tex2html(problem['id'])}</p>
           <div class="submit_problem">
-            <button class="submit_problem_button" onlick="submit_problem('11a');">Отослать!</button>
+            <button class="submit_problem_button" onlick="submit_problem('{problem["id"]}');">Отослать!</button>
           </div>
         </div>
       </div>
@@ -51,4 +60,4 @@
   <br style="height: 3em; clear: both;">
   <footer>MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a></footer>
 </body>
-</html>
+</html>''')

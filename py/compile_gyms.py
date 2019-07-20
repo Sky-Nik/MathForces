@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import os
-import json
 from gym_json2html import gym_json2html
 from gym_json2html_table import gym_json2html_table
 from problems2gym_tex import problems2gym_tex
