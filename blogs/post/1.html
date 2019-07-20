@@ -3,61 +3,38 @@
 <head>
   <title>Блог Nikita.Skybytski | MathForces</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="../index.css">
-  <script type="text/javascript" src="/MathForces/countdown.js"></script>
+  <link rel="stylesheet" type="text/css" href="/MathForces/css/index.css">
+  <link rel="stylesheet" type="text/css" href="/MathForces/css/blogs.css">
+  <script type="text/javascript" src="/MathForces/js/countdown.js"></script>
+  <script type="text/javascript" src="/MathForces/js/convertDates.js"></script>
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-  <!-- <script type="text/javascript" src="/MathForces/convertDates.js"></script> -->
-  <script type="text/javascript" src="/MathForces/convertDates.js"></script>
 </head>
 <body onload="convertDates();">
-  <div class="header">
-    <div class="logo">
-      <a href="/MathForces/">
-        <img src="/MathForces/img/logo-300x65.png">
-      </a>
-    </div>
+  <header>
+    <div class="logo"><a href="/MathForces/"><img src="/MathForces/img/logo-300x65.png"></a></div>
     <div class="right">
       <div class="lang-chooser">
-        <a href="/index_en.html">
-          <img src="/MathForces/img/gb.png" title="In English" alt="In English">
-        </a>
-        <!-- <a href="?locale=ru">
-          <img src="ru.png" title="По-русски" alt="По-русски">
-        </a> -->
-        <a href="index.html">
-          <img src="/MathForces/img/ua.png" title="Українською" alt="Українською">
-        </a>
+        <a href="/index_en.html"><img src="/MathForces/img/gb.png" title="In English" alt="In English"></a>
+        <!-- <a href="?locale=ru"><img src="ru.png" title="По-русски" alt="По-русски"></a> -->
+        <a href="index.html"><img src="/MathForces/img/ua.png" title="Українською" alt="Українською"></a>
       </div>
       <div class="login">
         <a href="/MathForces/enter.html?back=%2f">Увійти</a>&ensp;|&ensp;<a href="/MathForces/register.html">Зареєструватися</a>
       </div>
     </div>
-  </div>
-  <div class="roundbox menu-box">
-    <div class="menu-list-container">
-      <ul class="menu-list main-menu-list">
-        <li class>
-          <a href="/MathForces/">ГОЛОВНА</a>
-        </li>
-        <li class>
-          <a href="/MathForces/contests/">ЗМАГАННЯ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/gyms/">ТРЕНУВАННЯ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/problemset/">АРХІВ</a>
-        </li>
-        <li class>
-          <a href="/MathForces/groups/">ГРУПИ</a>
-        </li>
-        <li class="current">
-          <a href="/MathForces/blogs/">БЛОГИ</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  </header>
+  <nav class="roundbox">
+    <ul class="menu-list main-menu-list">
+      <li class><a href="/MathForces/">ГОЛОВНА</a></li>
+      <li class><a href="/MathForces/contests/">ЗМАГАННЯ</a></li>
+      <li class><a href="/MathForces/gyms/">ТРЕНУВАННЯ</a></li>
+      <li class><a href="/MathForces/problemset/">АРХІВ</a></li>
+      <li class><a href="/MathForces/groups/">ГРУПИ</a></li>
+      <li class="current"><a href="/MathForces/blogs/">БЛОГИ</a></li>
+      <li class><a href="/MathForces/team/">КОМАНДА</a></li>
+    </ul>
+  </nav>
   <br style="height: 3em; clear: both;">
   <div style="position: relative;">
     <div id="sidebar">
@@ -67,10 +44,8 @@
         </div>
         <div style="padding: 0.5em; border-radius: 5px 5px 0 0;">
           <div class="before-contest">
-            <span class="contest-state-phase">До змагання</span>
-            <br>
-            <a href="/MathForces/contests/3">Онлайн олімпіада</a>
-            <br>
+            <span class="contest-state-phase">До змагання</span><br>
+            <a href="/MathForces/contests/3">Онлайн олімпіада</a><br>
             <span class="countdown" id="before-contest-countdown"></span>
           </div>
         </div>
@@ -115,8 +90,6 @@
     </div>
   </div>
   <br style="height: 3em; clear: both;">
-  <div class="footer">
-    MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a>
-  </div>
+  <footer>MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a></footer>
 </body>
 </html>
