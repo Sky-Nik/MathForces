@@ -148,9 +148,8 @@ a:link {
   color: #0000cc;
 }
 
-#pageContent {
-  margin: 1em;
-  padding-top: 1em;
+#pagePhotoContent {
+  margin: 0 1em;
   min-height: 20em;
 }
 .content-with-sidebar {
