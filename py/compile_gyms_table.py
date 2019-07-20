@@ -51,7 +51,7 @@ def compile_gyms_table():
   open('index.html', 'w', encoding='utf-8').writelines(index_lines)
   # autoupdate contets table on GitHub Pages:
   os.system('git add . && git commit -m "Recompiled gyms table" && git push')
-  os.chdri('../py')
+  os.chdir('../py')
 
 
 if __name__ == '__main__':
