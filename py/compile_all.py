@@ -7,6 +7,7 @@ from compile_contests import compile_contests
 
 
 def compile_all():
+  """ supposed to run from /py directory """
   compile_gyms_table()
   compile_gyms()
   compile_contests_table()
@@ -15,4 +16,6 @@ def compile_all():
 
 if __name__ == '__main__':
   compile_all()
+  os.chdir('..')
   os.system('git add . && git commit -m "Recompiled all" && git push')
+  os.chdir('py')
