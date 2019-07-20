@@ -1,9 +1,9 @@
-body div.header div.right {
+.right {
   float: right;
   text-align: right;
 }
 
-body div.header div.right div.login {
+.login {
   font-family: "verdana", "arial", sans-serif;
 }
 
@@ -15,13 +15,13 @@ body {
   margin: 0 auto;
 }
 
-body div.header {
+header {
   height: 5em;
   margin: 0 1em;
   position: relative;
 }
 
-body div.header div.logo {
+.logo {
   float: left;
 }
 
@@ -40,7 +40,7 @@ html {
   background-color: white;
 }
 
-.menu-box {
+nav {
   margin: 0 1em;
   padding-top: 0.5em;
   height: 2.5em;
@@ -67,7 +67,6 @@ li {
 
 .menu-list li {
   font-family: "verdana", "arial", sans-serif;
-  /*font-family: 'Cuprum', sans-serif !important;*/
   float: left;
   list-style: none;
   margin-right: 1.25em;
@@ -78,10 +77,6 @@ li {
 
 div {
   padding: 0;
-}
-
-.menu-list-container {
-  margin: 0;
 }
 
 .menu-list li a {
@@ -139,9 +134,6 @@ div {
 .before-contest {
   font-size: 1.75rem;
   text-align: center;
-  /*border-bottom: 1px solid rgb(34, 177, 76);*/
-  /*margin:0 -0.5em 0.5em -0.5em;*/
-  /*padding: 0 1em 0.5em 1em;*/
 }
 
 .countdown {
@@ -157,12 +149,19 @@ a:link {
   padding-top: 1em;
   min-height: 20em;
 }
+
+/* used for /team page only
+ * replaces #pageContent */
+#pagePhotoContent {
+  margin: 0 1em;
+  min-height: 20em;
+}
+
 .content-with-sidebar {
   margin-right: 22em !important;
 }
 
 .rated-user {
-  /* font-family: arial; */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none !important;
   font-weight: bold;
@@ -173,7 +172,6 @@ a:link {
 }
 
 .topic {
-  /* margin: 1em 0 1em 0.5em; */
   margin: 0 0 2em 0;
 }
 
@@ -190,8 +188,6 @@ a:link {
   margin: 1em 0;
   padding-left: 1em;
   border-left: 4px solid #B9B9B9;
-  /* line-height: 1.85em; */
-  /* font-size: 0.85em; */
   line-height: 20px;
   font-size: 1.2rem;
 }
@@ -205,13 +201,13 @@ div.ttypography {
   font-size: 1.4rem;
   word-wrap: break-word;
   margin: 1.5em 0 0 0 !important;
-  /* background-color: #ffffff; */
 }
 
-.footer {
+footer {
   padding-top: 1em;
   border-top: 1px solid #ccc;
   text-align: center;
   font-size: 1em;
   clear: both;
+  height: 2em;
 }
