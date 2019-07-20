@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 import os
 import json
-from contest_json2html import contest_json2html, contest_json2html_table
+from contest_json2html import contest_json2html
+from contest_json2html_table import contest_json2html_table
 from problems2contest_tex import problems2contest_tex
 
 
@@ -13,7 +14,7 @@ def compile_contests():
     contest_json2html_table(contest_id)
     problems2contest_tex(contest_id)
   os.chdir('../py')
-  os.system('git add . && git commit -m"Recompiled all contests" && git push')
+  os.system('git add . && git commit -m "Recompiled all contests" && git push')
 
 
 if __name__ == '__main__':
