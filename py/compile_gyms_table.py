@@ -49,10 +49,10 @@ def compile_gyms_table():
   table_body_end = index_lines.index('        </tbody>\n')
   index_lines = index_lines[:table_body_start + 1] + [compiled_gyms_table, ] + index_lines[table_body_end:]
   open('index.html', 'w', encoding='utf-8').writelines(index_lines)
-  # autoupdate contets table on GitHub Pages:
-  os.system('git add . && git commit -m "Recompiled gyms table" && git push')
   os.chdir('../py')
 
 
 if __name__ == '__main__':
   compile_gyms_table()
+  # autoupdate on GitHub Pages:
+  os.system('git add . && git commit -m "Recompiled gyms table" && git push')

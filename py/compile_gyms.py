@@ -14,8 +14,9 @@ def compile_gyms():
     gym_json2html_table(gym_id)
     problems2gym_tex(gym_id)
   os.chdir('../py')
-  os.system('git add . && git commit -m "Recompiled all gyms" && git push')
 
 
 if __name__ == '__main__':
   compile_gyms()
+  # autoupdate on GitHub Pages:
+  os.system('git add . && git commit -m "Recompiled all gyms" && git push')

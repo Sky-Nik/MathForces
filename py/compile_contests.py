@@ -14,8 +14,9 @@ def compile_contests():
     contest_json2html_table(contest_id)
     problems2contest_tex(contest_id)
   os.chdir('../py')
-  os.system('git add . && git commit -m "Recompiled all contests" && git push')
 
 
 if __name__ == '__main__':
   compile_contests()
+  # autoupdate on GitHub Pages:
+  os.system('git add . && git commit -m "Recompiled all contests" && git push')
