@@ -35,9 +35,9 @@ def gym_json2html_table(gym_id):
   </header>
   <nav class="roundbox">
     <ul class="menu-list main-menu-list">
-      <li class="current"><a href="/MathForces/">ГОЛОВНА</a></li>
+      <li class><a href="/MathForces/">ГОЛОВНА</a></li>
       <li class><a href="/MathForces/contests/">ЗМАГАННЯ</a></li>
-      <li class><a href="/MathForces/gyms/">ТРЕНУВАННЯ</a></li>
+      <li class="current"><a href="/MathForces/gyms/">ТРЕНУВАННЯ</a></li>
       <li class><a href="/MathForces/problemset/">АРХІВ</a></li>
       <li class><a href="/MathForces/groups/">ГРУПИ</a></li>
       <li class><a href="/MathForces/blogs/">БЛОГИ</a></li>
