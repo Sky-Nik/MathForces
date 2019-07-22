@@ -3,9 +3,9 @@ import json
 
 
 def contest_json2html_table(contest_id):
-  """ supposed to run from /contests directory """
-  contest = json.loads(open(f'{contest_id}.json', 'r', encoding='utf-8').read())
-  contest_html = f'''
+    """ supposed to run from /contests directory """
+    contest = json.loads(open(f'{contest_id}.json', 'r', encoding='utf-8').read())
+    contest_html = f'''
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,26 +67,26 @@ def contest_json2html_table(contest_id):
         </thead>
         <tbody>'''
 
-  k = 0
-  for problem_id in contest['p_ids']:
-    problem = json.loads(open(f'../problemset/{problem_id}.json', 'r', encoding='utf-8').read())
-    k += 1
-    contest_html += f'''
+    k = 0
+    for problem_id in contest['p_ids']:
+        problem = json.loads(open(f'../problemset/{problem_id}.json', 'r', encoding='utf-8').read())
+        k += 1
+        contest_html += f'''
           <tr style="background-color: {'white' if k & 1 else '#f2f2f2'};">
             <td><a href="../problemset/{problem['id']}">{k}</a> <span style="color: gray; font-size: smaller;">({problem['id']})</span></td>
             <td><a href="../problemset/{problem['id']}">{problem['name']}</a></td>
             <td><button class="submit_problem_button_inline_{'odd' if k & 1 else 'even'}" onlick="submit_problem('{problem["id"]}');"></button></td>
           </tr>'''
 
-  k += 1
-  contest_html += f'''
+    k += 1
+    contest_html += f'''
           <tr style="background-color: {'white' if k & 1 else '#f2f2f2'};">
             <td></td>
             <td><a href="{contest_id}.html">Всі задачі</a></td>
             <td></td>
           </tr>'''
 
-  contest_html += '''
+    contest_html += '''
         </tbody>
       </table
     </div>
@@ -95,5 +95,5 @@ def contest_json2html_table(contest_id):
   <footer>MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a></footer>
 </body>
 </html>'''
-    
-  open(f'{contest_id}_t.html', 'w', encoding='utf-8').write(contest_html)
+
+    open(f'{contest_id}_t.html', 'w', encoding='utf-8').write(contest_html)

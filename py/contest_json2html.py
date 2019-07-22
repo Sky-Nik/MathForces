@@ -4,9 +4,9 @@ from problem_tex2html import problem_tex2html
 
 
 def contest_json2html(contest_id):
-  """ supposed to run from /contests directory """
-  contest = json.loads(open(f'{contest_id}.json', 'r', encoding='utf-8').read())
-  contest_html = f'''
+    """ supposed to run from /contests directory """
+    contest = json.loads(open(f'{contest_id}.json', 'r', encoding='utf-8').read())
+    contest_html = f'''
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,11 +48,11 @@ def contest_json2html(contest_id):
     <div id="pageContent">
 '''
 
-  k = 0
-  for problem_id in contest['p_ids']:
-    k += 1
-    problem = json.loads(open(f'../problemset/{problem_id}.json', 'r', encoding='utf-8').read())
-    contest_html += f'''
+    k = 0
+    for problem_id in contest['p_ids']:
+        k += 1
+        problem = json.loads(open(f'../problemset/{problem_id}.json', 'r', encoding='utf-8').read())
+        contest_html += f'''
       <div class="problem">
         <h1 class="problem_head">Задача №{k} <span style="font-size: smaller;">({problem['id']})</span>: {problem['name']}</h1>
         <p class="problem_body">{problem_tex2html(problem['id'], path="../problemset/")}</p>
@@ -61,7 +61,7 @@ def contest_json2html(contest_id):
         </div>
       </div>'''
 
-  contest_html += f'''
+    contest_html += f'''
     </div>
   </div>
   <br style="height: 3em; clear: both;">
@@ -69,4 +69,4 @@ def contest_json2html(contest_id):
 </body>
 </html>'''
 
-  open(f'{contest_id}.html', 'w', encoding='utf-8').write(contest_html)
+    open(f'{contest_id}.html', 'w', encoding='utf-8').write(contest_html)

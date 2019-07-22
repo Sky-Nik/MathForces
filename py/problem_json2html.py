@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 import json
-from problem_tex2html import problem_tex2html 
+from problem_tex2html import problem_tex2html
 
 
 def problem_json2html(problem_id):
-  """ supposed to run from /problemset directory """
-  problem = json.loads(open(f'{problem_id}.json', 'r', encoding='utf-8').read())
-  assert problem['type'] == 'problem'
-  open(f"{problem['id']}.html", 'w', encoding='utf-8').write(f'''
+    """ supposed to run from /problemset directory """
+    problem = json.loads(open(f'{problem_id}.json', 'r', encoding='utf-8').read())
+    assert problem['type'] == 'problem'
+    open(f"{problem['id']}.html", 'w', encoding='utf-8').write(f'''
 <!DOCTYPE html>
 <html>
 <head>

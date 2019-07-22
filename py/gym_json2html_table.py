@@ -2,10 +2,10 @@
 import json
 
 
-def gym_json2html_table(gym_id): 
-  """ supposed to run from /gyms directory """
-  gym = json.loads(open(f'{gym_id}.json', 'r', encoding='utf-8').read())
-  gym_html = f'''
+def gym_json2html_table(gym_id):
+    """ supposed to run from /gyms directory """
+    gym = json.loads(open(f'{gym_id}.json', 'r', encoding='utf-8').read())
+    gym_html = f'''
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,26 +55,26 @@ def gym_json2html_table(gym_id):
         </thead>
         <tbody>'''
 
-  k = 0
-  for problem_id in gym['p_ids']:
-    problem = json.loads(open(f'../problemset/{problem_id}.json', 'r', encoding='utf-8').read())
-    k += 1
-    gym_html += f'''
+    k = 0
+    for problem_id in gym['p_ids']:
+        problem = json.loads(open(f'../problemset/{problem_id}.json', 'r', encoding='utf-8').read())
+        k += 1
+        gym_html += f'''
           <tr style="background-color: {'white' if k & 1 else '#f2f2f2'};">
             <td><a href="../problemset/{problem['id']}">{k}</a> <span style="color: gray; font-size: smaller;">({problem['id']})</span></td>
             <td><a href="../problemset/{problem['id']}">{problem['name']}</a></td>
             <td><button class="submit_problem_button_inline_{'odd' if k & 1 else 'even'}" onlick="submit_problem('{problem["id"]}');"></button></td>
           </tr>'''
 
-  k += 1
-  gym_html += f'''
+    k += 1
+    gym_html += f'''
           <tr style="background-color: {'white' if k & 1 else '#f2f2f2'};">
             <td></td>
             <td><a href="{gym_id}.html">Всі задачі</a></td>
             <td></td>
           </tr>'''
 
-  gym_html += '''
+    gym_html += '''
         </tbody>
       </table
     </div>
@@ -83,5 +83,5 @@ def gym_json2html_table(gym_id):
   <footer>MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a></footer>
 </body>
 </html>'''
-    
-  open(f'{gym_id}_t.html', 'w', encoding='utf-8').write(gym_html)
+
+    open(f'{gym_id}_t.html', 'w', encoding='utf-8').write(gym_html)

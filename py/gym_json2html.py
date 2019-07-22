@@ -4,9 +4,9 @@ from problem_tex2html import problem_tex2html
 
 
 def gym_json2html(gym_id):
-  """ supposed to run from /gyms directory """
-  gym = json.loads(open(f'{gym_id}.json', 'r', encoding='utf-8').read())
-  gym_html = f'''
+    """ supposed to run from /gyms directory """
+    gym = json.loads(open(f'{gym_id}.json', 'r', encoding='utf-8').read())
+    gym_html = f'''
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,11 +50,11 @@ def gym_json2html(gym_id):
     <div id="pageContent">
 '''
 
-  k = 0
-  for problem_id in gym['p_ids']:
-      k += 1
-      problem = json.loads(open(f'../problemset/{problem_id}.json', 'r', encoding='utf-8').read())
-      gym_html += f'''
+    k = 0
+    for problem_id in gym['p_ids']:
+        k += 1
+        problem = json.loads(open(f'../problemset/{problem_id}.json', 'r', encoding='utf-8').read())
+        gym_html += f'''
     <div class="problem">
       <h1 class="problem_head">Задача №{k} <span style="font-size: smaller;">({problem['id']})</span>: {problem['name']}</h1>
       <p class="problem_body">{problem_tex2html(problem['id'], path="../problemset/")}</p>
@@ -63,11 +63,11 @@ def gym_json2html(gym_id):
       </div>
     </div>'''
 
-  gym_html += f'''
+    gym_html += f'''
   </div>
   <br style="height: 3em; clear: both;">
   <footer>MathForces &copy; 2019 <a href="/MathForces/team">наша команда</a></footer>
 </body>
 </html>'''
 
-  open(f'{gym_id}.html', 'w', encoding='utf-8').write(gym_html)
+    open(f'{gym_id}.html', 'w', encoding='utf-8').write(gym_html)
