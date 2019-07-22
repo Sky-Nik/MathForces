@@ -2,13 +2,22 @@
   <dictionary name="NikitaSkybytskyi">
     <words>
       <w>bigskip</w>
+      <w>blogpost</w>
+      <w>blogs</w>
+      <w>combinatorics</w>
+      <w>doctype</w>
       <w>guillemotleft</w>
       <w>guillemotright</w>
       <w>ldots</w>
       <w>maketitle</w>
       <w>medskip</w>
+      <w>pateryna</w>
       <w>problemset</w>
+      <w>problemsets</w>
+      <w>skybytskyi</w>
       <w>smallskip</w>
+      <w>tablename</w>
+      <w>tbody</w>
     </words>
   </dictionary>
 </component>

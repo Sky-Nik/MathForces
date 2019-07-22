@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 import os
-from compile_gyms_table import compile_gyms_table
-from compile_gyms import compile_gyms
-from compile_contests_table import compile_contests_table
-from compile_contests import compile_contests
-from compile_problems_table import compile_problems_table
-from compile_problems import compile_problems
+
+from py.compile_contests import compile_contests
+from py.compile_contests_table import compile_contests_table
+from py.compile_gyms import compile_gyms
+from py.compile_gyms_table import compile_gyms_table
+from py.compile_problems import compile_problems
+from py.compile_problems_table import compile_problems_table
 
 
 def compile_all():

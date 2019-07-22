@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
-from problem_json2html import problem_json2html
+
+from py.problem_json2html import problem_json2html
 
 
 def compile_problems():

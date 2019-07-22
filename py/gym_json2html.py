@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import json
-from problem_tex2html import problem_tex2html
+
+from py.problem_tex2html import problem_tex2html
 
 
 def gym_json2html(gym_id):
