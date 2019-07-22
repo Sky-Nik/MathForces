@@ -12,7 +12,6 @@ def login_user(handle_, password_) -> int:
     """ returns exception code if any else 0"""
     user_session = get_session()
     try:
-        # auto-registration is possible for students only
         user = user_session.query(User).filter(User.handle == handle_).one()
         if user.password == password_:
             return 0
