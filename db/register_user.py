@@ -38,6 +38,8 @@ def register_user(handle_, password_, email_, country_) -> int:
 
 
 if __name__ == "__main__":
+    """ call this script with
+        python register_user.py "HANDLE" "PASSWORD" "EMAIL" ["COUNTRY"] """
     logging.info(f'''User registration returned {register_user(
         handle_=sys.argv[1],
         password_=sys.argv[2],
