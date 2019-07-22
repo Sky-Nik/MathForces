@@ -23,10 +23,14 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="202e1d28-7fdb-4737-9912-ab76079a5d72">
+        <schema name="main" object-types="table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="284f0dfe-44da-4170-9442-503fb9f984b7">
+    <connection id="202e1d28-7fdb-4737-9912-ab76079a5d72">
       <console name="test" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
@@ -34,10 +38,11 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="284f0dfe-44da-4170-9442-503fb9f984b7" />
+    <connection id="202e1d28-7fdb-4737-9912-ab76079a5d72" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="284f0dfe-44da-4170-9442-503fb9f984b7" dataset="main.users" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="202e1d28-7fdb-4737-9912-ab76079a5d72" dataset="main.submissions" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="202e1d28-7fdb-4737-9912-ab76079a5d72" dataset="main.problems" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -62,7 +67,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="284f0dfe-44da-4170-9442-503fb9f984b7" active="true">
+      <connection id="202e1d28-7fdb-4737-9912-ab76079a5d72" active="true">
         <database>
           <name value="test" />
           <description value="" />
@@ -77,7 +82,7 @@
           <port value="1234" />
           <database value="database" />
           <files>
-            <file path="C:\Users\NikitaSkybytskyi\Desktop\MathForces\db\mf.db" schema="main" />
+            <file path="C:\Users\NikitaSkybytskyi\Desktop\MathForces\db\helpers\mf.db" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />

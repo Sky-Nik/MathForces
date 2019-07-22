@@ -1,7 +1,5 @@
 from sqlalchemy.orm import relationship
 
-from db.classes import User, BlogPost, Problem, ProblemTag, ProblemSet, ProblemSetProblem, Group, GroupUser, \
-    GroupBlogPost, GroupProblemSet
 from db.classes.Base import Base
 from db.classes.BlogPost import BlogPost
 from db.classes.Group import Group
@@ -14,6 +12,7 @@ from db.classes.ProblemSetProblem import ProblemSetProblem
 from db.classes.ProblemTag import ProblemTag
 from db.classes.Tag import Tag
 from db.classes.User import User
+from db.classes.Submission import Submission
 
 User.blogPosts = relationship("BlogPost", order_by=BlogPost.id, back_populates="author")
 
@@ -35,4 +34,4 @@ Group.problemSets = relationship("GroupProblemSet", order_by=GroupProblemSet.pro
 ProblemSet.groups = relationship("GroupProblemSet", order_by=GroupProblemSet.groupId, back_populates="problemSet")
 
 __all__ = ["Base", "User", "BlogPost", "Problem", "ProblemTag", "ProblemSet", "ProblemSetProblem", "Group", "GroupUser",
-           "GroupBlogPost", "GroupProblemSet"]
+           "GroupBlogPost", "GroupProblemSet", "Submission"]

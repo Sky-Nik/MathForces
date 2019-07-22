@@ -10,9 +10,9 @@ class ProblemSet(Base):
     id = Column(Integer, primary_key=True)  # , autoincrement=False
     # source = Column(String(255))
     # name = Column(String(255))
-    grade = Column(Integer)
-    startTime = Column(DateTime)
-    endTime = Column(DateTime)
+    grade = Column(Integer)  # nullable=True
+    startTime = Column(DateTime, nullable=False)
+    endTime = Column(DateTime, nullable=False)
 
     def __repr__(self):
         return f"<ProblemSet(problemSetType={self.problemSetType}, grade={self.grade}, " \

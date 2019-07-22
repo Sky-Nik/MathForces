@@ -13,7 +13,7 @@ class Submission(Base):
     # depending on contest's grading policy.
     # -1 if submission is not yer graded.
     grade = Column(Integer)
-    gradedBy = Column(Integer, ForeignKey('users.id'))
+    gradedBy = Column(Integer, ForeignKey('users.id'), nullable=True, default=None)
 
     def __repr__(self):
         return f"<Submission(submittedBy={self.submittedBy}, problemId={self.problemId}, grade={self.grade}" \
