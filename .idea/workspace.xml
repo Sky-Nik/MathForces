@@ -2,19 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7138fd8-6e01-4296-8923-7083f6ab0afc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/Base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/BlogPost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/Group.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/GroupBlogPost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/GroupProblemSet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/GroupUser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/Problem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/ProblemSet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/ProblemSetProblem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/ProblemTag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/Submission.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/Tag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/classes/User.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/configure_logging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/get_session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/register_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/tests/TestUser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/NikitaSkybytskyi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/NikitaSkybytskyi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/mf.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/mf.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/classes/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/logging.log" beforeDir="false" afterPath="$PROJECT_DIR$/db/logging.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mf.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py/compile_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/compile_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py/compile_contests.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/compile_contests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py/compile_gyms.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/compile_gyms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py/compile_problems.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/compile_problems.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py/contest_json2html.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/contest_json2html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py/gym_json2html.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/gym_json2html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py/problem_json2html.py" beforeDir="false" afterPath="$PROJECT_DIR$/py/problem_json2html.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,73 +40,66 @@
     <session id="682847523">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="db" value="7" />
+          <entry key="db" value="10" />
+          <entry key="gitignore" value="1" />
           <entry key="js" value="1" />
           <entry key="json" value="1" />
-          <entry key="py" value="41" />
+          <entry key="log" value="4" />
+          <entry key="psql" value="1" />
+          <entry key="py" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="DBN-SQL" value="1" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="1" />
-          <entry key="Python" value="41" />
-          <entry key="SQL" value="7" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Python" value="82" />
+          <entry key="SQL" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="58" />
-          <entry key="py" value="2081" />
+          <entry key="dummy" value="61" />
+          <entry key="py" value="4452" />
+          <entry key="txt" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="58" />
-          <entry key="Python" value="2081" />
+          <entry key="PLAIN_TEXT" value="146" />
+          <entry key="Python" value="4452" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/register_user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+              <folding>
+                <element signature="e#22#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/mf.db">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="e#22#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/classes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="186" column="54" lean-forward="true" selection-start-line="186" selection-start-column="54" selection-end-line="186" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/db/logging.log">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -101,6 +108,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Setup Script" />
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -108,13 +117,20 @@
     <findStrings>
       <find>tag</find>
       <find>user</find>
+      <find>''</find>
     </findStrings>
     <replaceStrings>
       <replace>user</replace>
       <replace>problemSet</replace>
+      <replace>'</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nikita Skybytskyi &lt;n.skybytskyi@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -128,21 +144,38 @@
         <option value="$PROJECT_DIR$/py/problems2contest_tex.py" />
         <option value="$PROJECT_DIR$/py/problem_tex2html.py" />
         <option value="$PROJECT_DIR$/py/compile_problems_table.py" />
-        <option value="$PROJECT_DIR$/db/classes/__init__.py" />
         <option value="$PROJECT_DIR$/py/compile_all.py" />
-        <option value="$PROJECT_DIR$/py/compile_contests.py" />
-        <option value="$PROJECT_DIR$/py/compile_gyms.py" />
         <option value="$PROJECT_DIR$/py/compile_problems.py" />
         <option value="$PROJECT_DIR$/py/contest_json2html.py" />
         <option value="$PROJECT_DIR$/py/gym_json2html.py" />
         <option value="$PROJECT_DIR$/py/problem_json2html.py" />
-        <option value="$PROJECT_DIR$/db/test.py" />
         <option value="$PROJECT_DIR$/db/classes.py" />
+        <option value="$PROJECT_DIR$/py/compile_gyms.py" />
+        <option value="$PROJECT_DIR$/py/compile_contests.py" />
+        <option value="$PROJECT_DIR$/db/classes/ProblemSet.py" />
+        <option value="$PROJECT_DIR$/db/classes/Problem.py" />
+        <option value="$PROJECT_DIR$/db/classes/GroupUser.py" />
+        <option value="$PROJECT_DIR$/db/classes/GroupProblemSet.py" />
+        <option value="$PROJECT_DIR$/db/classes/GroupBlogPost.py" />
+        <option value="$PROJECT_DIR$/db/classes/Group.py" />
+        <option value="$PROJECT_DIR$/db/classes/BlogPost.py" />
+        <option value="$PROJECT_DIR$/db/classes/Base.py" />
+        <option value="$PROJECT_DIR$/db/classes/ProblemSetProblem.py" />
+        <option value="$PROJECT_DIR$/db/classes/__init__.py" />
+        <option value="$PROJECT_DIR$/db/classes/TestUser.py" />
+        <option value="$PROJECT_DIR$/db/test.py" />
+        <option value="$PROJECT_DIR$/db/classes/User.py" />
+        <option value="$PROJECT_DIR$/db/tests/TestUser.py" />
+        <option value="$PROJECT_DIR$/db/registerUser.py" />
+        <option value="$PROJECT_DIR$/db/get_session.py" />
+        <option value="$PROJECT_DIR$/db/configure_logging.py" />
+        <option value="$PROJECT_DIR$/db/register_user.py" />
+        <option value="$PROJECT_DIR$/db/logging.log" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -171,6 +204,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,18 +217,23 @@
               <item name="MathForces" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MathForces" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MathForces" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/test.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/registerUser.py" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.db test">
+  <component name="RunManager" selected="Python.RegisterUser">
     <configuration name="Compile HTML" type="PythonConfigurationType" factoryName="Python">
       <module name="MathForces" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,6 +262,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/py/compile_all.py" />
       <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RegisterUser" type="PythonConfigurationType" factoryName="Python">
+      <module name="MathForces" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\NikitaSkybytskyi\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\NikitaSkybytskyi\Desktop\MathForces\db\register_user.py" />
+      <option name="PARAMETERS" value="&quot;S1&quot; &quot;UxagTUZXK8tnPtas&quot; &quot;s.1@gmail.com&quot; &quot;ua&quot;" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -251,10 +311,54 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="register_user" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MathForces" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db/register_user.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUser" type="tests" factoryName="Unittests">
+      <module name="MathForces" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\NikitaSkybytskyi\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/db/tests/TestUser.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Python.RegisterUser" />
       <item itemvalue="Python.Compile HTML" />
       <item itemvalue="Python.db test" />
+      <item itemvalue="Python tests.TestUser" />
+      <item itemvalue="Python.register_user" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.register_user" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -267,32 +371,74 @@
       <option name="presentableId" value="Default" />
       <updated>1563766326540</updated>
     </task>
+    <task id="LOCAL-00001" summary="all (?) db classes, no methods so far;&#10;filled parameter path in os.listdir calls">
+      <created>1563773959838</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563773959838</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestUser - 2019.07.22 at 11h 32m 48s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestUser - 2019.07.22 at 11h 32m 51s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestUser - 2019.07.22 at 11h 33m 14s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestUser - 2019.07.22 at 11h 33m 31s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestUser - 2019.07.22 at 11h 33m 33s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestUser - 2019.07.22 at 12h 07m 23s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestUser - 2019.07.22 at 12h 07m 30s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestUser - 2019.07.22 at 12h 07m 46s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestUser - 2019.07.22 at 12h 07m 50s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestUser - 2019.07.22 at 12h 08m 06s.xml">
+      <configuration name="TestUser" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12793177" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32952183" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.12953092" />
+      <window_info id="Structure" order="1" sideWeight="0.5010395" side_tool="true" weight="0.12846482" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="DB Browser" order="3" weight="0.15191898" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25883576" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38773388" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32952183" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32952183" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32952183" />
+      <window_info anchor="bottom" id="DB Execution Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -319,6 +465,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="all (?) db classes, no methods so far" />
+    <MESSAGE value="all (?) db classes, no methods so far;&#10;filled parameter path in os.listdir calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="all (?) db classes, no methods so far;&#10;filled parameter path in os.listdir calls" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/convertDates.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -327,19 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py/compile_contests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -347,16 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py/compile_gyms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -364,9 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -374,9 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -450,35 +577,202 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="835">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py/compile_gyms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py/compile_contests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/classes.py">
+    <entry file="file://$PROJECT_DIR$/db/classes/ProblemTag.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="186" column="54" lean-forward="true" selection-start-line="186" selection-start-column="54" selection-end-line="186" selection-end-column="54" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="1" selection-start-column="39" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/ProblemSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" lean-forward="true" selection-start-column="48" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/Problem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" lean-forward="true" selection-start-column="46" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/GroupUser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/GroupProblemSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/GroupBlogPost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/Group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="68" lean-forward="true" selection-start-line="2" selection-start-column="68" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/BlogPost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/Base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/ProblemSetProblem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/TestUser.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="1471" column="18" selection-start-line="1471" selection-start-column="15" selection-end-line="1471" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tests/mf.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://129e82fc-ca13-41a9-884a-694e4d8bdd3d/objects/schemas/main/tables/users">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="0" readonly="false">
+          <columns>
+            <column name="userType" position="0" visible="true" />
+            <column name="handle" position="1" visible="true" />
+            <column name="password" position="2" visible="true" />
+            <column name="email" position="3" visible="true" />
+            <column name="country" position="4" visible="true" />
+            <column name="registredOn" position="5" visible="true" />
+            <column name="id" position="6" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/classes/User.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/test.py">
+    <entry file="file://$PROJECT_DIR$/db/get_session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
-            <element signature="e#22#58#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/mf.db">
+    <entry file="file://$PROJECT_DIR$/db/tests/TestUser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="439">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#22#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/daily.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/configure_logging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/mf.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/register_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding>
+            <element signature="e#22#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/logging.log">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
