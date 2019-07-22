@@ -24,10 +24,10 @@ def register_user(handle_, password_, email_, country_) -> int:
         return 0
     except IntegrityError as ie:  # UNIQUE constraint failed
         logging.error(ie)
-        if user_session.query(User.handle == handle_):
+        if user_session.query(User.handle == handle_).one_or_none() is not None:
             logging.error('Provided handle is already taken.')
             return 1
-        elif user_session.query(User.email == email_):
+        elif user_session.query(User.email == email_).one_or_none() is not None:
             logging.error('Provided email is already in use.')
             return 2
         else:  # idk if this is possible
